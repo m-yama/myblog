@@ -1,0 +1,8 @@
+.doctrees/
+__pycache__/
+_website/
+*.py[cod]
+
+.DS_Store
+
+*~
