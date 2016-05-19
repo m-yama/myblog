@@ -31,7 +31,8 @@ Githubにデプロイしてみる
 ---------------
 
 HTTPSでも push できるようにするには、 Github でアクセストークンを生成すればいいらしい。
-手順は *github access token* とかで検索すれば出てくる。
+
+（手順は *github access token* 等で検索）
 
 
 しかし
@@ -39,7 +40,7 @@ HTTPSでも push できるようにするには、 Github でアクセストー�
 
 依然として、 ``ablog deploy`` は動かない。
 
-.. code:: python
+.. code-block:: sh
 
    git push origin master
    bash: /dev/tty: No such device or address

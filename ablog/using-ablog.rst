@@ -16,7 +16,7 @@ Sphinxでブログを書いてみたいと思い、Googleで検索したら *Abl
 
 open関数を使っているところを、
 
-.. code:: python
+.. code-block:: python
 
    open(path, encode='utf-8')
 
@@ -33,6 +33,12 @@ open関数を使っているところを、
 そういえばPython3から、open関数の引数でエンコードの指定をしないと開けないとか、何かで見た気がする。
 WindowsではPython2.7で動かすようにしたら、上記のエラーは出なくなった。
 
+.. update:: May 20, 2016
+
+   正確には、Python3から encoding 引数が追加され、デフォルトではOSで設定されている既定の文字コードが使われるらしい。
+
+   `組み込み関数 - open() <http://docs.python.jp/3.3/library/functions.html#open>`_
+
 
 テーマ変更がうまくいかない
 ------------------------------
@@ -40,9 +46,10 @@ WindowsではPython2.7で動かすようにしたら、上記のエラーは出�
 テーマを変えようとしたら、 ``ablog build`` すると以下のエラーメッセージが出てビルドできない。
 なんか面倒そうなので、とりあえず保留。
 
-.. code:: python
+.. code-block:: python
 
    Exception occurred:
      File "c:\python27\lib\site-packages\sphinx\jinja2glue.py", line 159, in get_source
        raise TemplateNotFound(template)
    TemplateNotFound: about.html
+
