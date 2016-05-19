@@ -1,5 +1,6 @@
 .. post:: May 16, 2016
    :tags: ablog
+   :category: blog
 
 
 Githubにデプロイしてみる

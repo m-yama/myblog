@@ -1,5 +1,6 @@
 .. post:: May 15, 2016
    :tags: ablog
+   :category: blog
 
 
 ABlogを使ってみる
