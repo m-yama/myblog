@@ -8,7 +8,7 @@ Welcome to MY BLOG
 
 最近の投稿:
 
-.. postlist:: 5
+.. postlist:: 10
    :excerpts:
 
 

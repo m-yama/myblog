@@ -23,7 +23,7 @@ blog_title = u'MY BLOG'
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
-blog_baseurl = u'http://m-yama.github.io/'
+blog_baseurl = u'https://m-yama.github.io/'
 
 # Choose to archive only post titles. Archiving only titles can speed
 # up project building.
@@ -32,13 +32,17 @@ blog_baseurl = u'http://m-yama.github.io/'
 #Github user name
 github_pages = 'm-yama'
 
+# Disqus integration
+disqus_shortname = 'httpsmyamagithubio'
+
+
 # -- Blog Authors, Languages, and Locations -----------------------------------
 
 # A dictionary of author names mapping to author full display names and
 # links. Dictionary keys are what should be used in ``post`` directive
 # to refer to the author.  Default is ``{}``.
 blog_authors = {
-    'm-yama': ('m-yama', None),
+    'm-yama': ('m-yama', 'https://m-yama.github.io/'),
 }
 
 
