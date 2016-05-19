@@ -73,7 +73,7 @@ HTTPSでも push できるようにするには、 Github でアクセストー�
 Githubのアクセストークンを保存する
 --------------------------------------
 
-push するときに、コマンドラインに毎回トークンを貼り付けるのはめんどくさすぎるので、 `Caching your GitHub password in Git <https://help.github.com/articles/caching-your-github-password-in-git/>`_ に書いてある通り、
+push するときに、コマンドラインに毎回トークンを貼り付けるのはめんどくさすぎるので、 `Caching your GitHub password in Git <https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows>`_ に書いてある通り、
 
 ``git config --global credential.helper wincred``
 
