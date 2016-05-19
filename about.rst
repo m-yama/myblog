@@ -1,9 +1,8 @@
 
 .. _about:
 
-About myama
+About m-yama
 ============================
 
 よくいる平凡なプログラマー。
 
-An ordinary programmer.
