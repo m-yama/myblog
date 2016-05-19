@@ -86,3 +86,20 @@ push するときに、コマンドラインに毎回トークンを貼り付け
 
 よかったよかった。
 
+
+が、しかし
+------------
+
+デプロイはできるようになったが、このままでは Mac と Windows で横断的にブログを書く、という要件が満たされない。
+
+
+自動ビルド＆デプロイ
+--------------------
+
+ということで、 `Automate GitHub Pages Deploys <http://ablog.readthedocs.io/manual/auto-github-pages-deploys/>`_ を参考に、
+Travis CI を使って自動ビルド＆デプロイできるようにした。
+
+これで、WindowsでもMacでも、Githubに push すれば自動的にデプロイまでできるようになりました。
+
+ブログのソース管理もできて、言うことなしです。
+
