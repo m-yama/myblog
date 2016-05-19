@@ -33,7 +33,7 @@ blog_baseurl = u'https://m-yama.github.io/'
 github_pages = 'm-yama'
 
 # Disqus integration
-disqus_shortname = 'httpsmyamagithubio'
+disqus_shortname = 'm-yama'
 
 
 # -- Blog Authors, Languages, and Locations -----------------------------------
