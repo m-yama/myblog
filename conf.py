@@ -256,6 +256,9 @@ html_theme = 'alabaster'
 # documentation.
 html_theme_options = {
     'github_button': False,
+    'travis_button': True,
+    'github_user': 'm-yama',
+    'github_repo': 'myblog',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.

@@ -6,7 +6,7 @@
 ABlogを使ってみる
 ====================
 
-Sphinxでブログを書いてみたいと思い、Googleで検索したら *Ablog* というのが見つかったので使ってみる。
+Sphinxでブログを書いてみたいと思い、Googleで検索したら `ABlog for Sphinx <http://ablog.readthedocs.io/>`_ というのが見つかったので使ってみる。
 
 
 いきなりつまづく
