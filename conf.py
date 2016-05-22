@@ -134,7 +134,7 @@ html_sidebars = {
 
 # Link to `Font Awesome`_ at `Bootstrap CDN`_ and use icons in sidebars
 # and post footers.  Default: ``False``
-fontawesome_link_cdn = True
+#fontawesome_link_cdn = True
 
 # Sphinx_ theme already links to `Font Awesome`_.  Default: ``False``
 #fontawesome_included = False
@@ -143,7 +143,7 @@ fontawesome_link_cdn = True
 # with the configuration option: fontawesome_css_file
 # Path to `Font Awesome`_ :file:`.css` (default is ``None``) that will
 # be linked to in HTML output by ABlog.
-#fontawesome_css_file = None
+fontawesome_css_file = 'css/font-awesome.min.css'
 
 # -- Disqus Integration -------------------------------------------------------
 
