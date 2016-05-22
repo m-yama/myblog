@@ -44,7 +44,6 @@ WindowsではPython2.7で動かすようにしたら、上記のエラーは出�
 ------------------------------
 
 テーマを変えようとしたら、 ``ablog build`` すると以下のエラーメッセージが出てビルドできない。
-なんか面倒そうなので、とりあえず保留。
 
 .. code-block:: python
 
@@ -52,4 +51,6 @@ WindowsではPython2.7で動かすようにしたら、上記のエラーは出�
      File "c:\python27\lib\site-packages\sphinx\jinja2glue.py", line 159, in get_source
        raise TemplateNotFound(template)
    TemplateNotFound: about.html
+
+なんか面倒そうなので、とりあえず保留。
 
