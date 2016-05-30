@@ -15,14 +15,14 @@ Githubにデプロイしてみる
 
 環境は Windows 10。
 
-`Deploy to GitHub Pages <http://ablog.readthedocs.io/manual/deploy-to-github-pages/>`_ の説明通りに ``ablog deploy`` とやると、エラーが出てデプロイできない。
+`Deploy to GitHub Pages <http://ablog.readthedocs.io/manual/deploy-to-github-pages/>`_ の説明通りに ``ablog deploy`` とやると、なにやらエラーが出てデプロイできない・・・
 
 
 まず
 ----
 
-そもそも、Githubで2要素認証をオンにしていたため、HTTPSで clone や push などができていなかった。
-とりあえずSSH用のキーを作ってSSHのURLで push したらデプロイはできた。
+そもそも、Githubで2要素認証をオンにしていたことで、そのままではHTTPSで clone や push などができていませんでした。
+とりあえずSSH用のキーペアを作って、SSHで push したらデプロイはできました。
 
 （手順は *windows git ssh* 等で検索）
 
@@ -31,6 +31,7 @@ Githubにデプロイしてみる
 --------
 
 HTTPSでも push できるようにするには、 Github でアクセストークンを生成すればいいらしい。
+ということで、アクセストークンを生成して、HTTPSでも push できるようになりました。
 
 （手順は *github access token* 等で検索）
 
@@ -38,7 +39,7 @@ HTTPSでも push できるようにするには、 Github でアクセストー�
 しかし
 ------
 
-依然として、 ``ablog deploy`` は動かない。
+依然として、 ``ablog deploy`` は動きません・・・
 
 ::
 
@@ -73,34 +74,33 @@ HTTPSでも push できるようにするには、 Github でアクセストー�
 Githubのアクセストークンを保存する
 ----------------------------------
 
-push するときに、コマンドラインに毎回トークンを貼り付けるのはめんどくさすぎるので、 `Caching your GitHub password in Git <https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows>`_ に書いてある通り、
+push するときに、毎回コマンドラインにトークンを貼り付けるのは面倒すぎるので、 `Caching your GitHub password in Git <https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows>`_ に書いてある通り、
 
 ``git config --global credential.helper wincred``
 
-を実行してから一度アクセスすると、 Windows資格情報 に保存される。
+を実行してから一度 push すると、トークンが Windows資格情報 に保存されます。
 
 
 デプロイできるようになった
 --------------------------
 
-アクセストークンを Windows資格情報 に保存してから、 ``ablog deploy`` したらデプロイできるようになった！！
+アクセストークンを Windows資格情報 に保存してから、 ``ablog deploy`` したらデプロイできるようになりました！！
 
-よかったよかった。
+めでたしめでたし。
 
 
 が、しかし
 ----------
 
-デプロイはできるようになったが、このままでは Mac と Windows で横断的にブログを書く、という要件が満たされない。
+デプロイはできるようになりましたが、このままでは Mac と Windows で横断的にブログを書く、という個人的要件が満たされません。
 
 
 自動ビルド＆デプロイ
 --------------------
 
 ということで、 `Automate GitHub Pages Deploys <http://ablog.readthedocs.io/manual/auto-github-pages-deploys/>`_ を参考に、
-Travis CI を使って自動ビルド＆デプロイできるようにした。
+Travis CI を使って自動ビルド＆デプロイできるようにしてみました。
 
-これで、WindowsでもMacでも、Githubに push すれば自動的にデプロイまでできるようになりました。
-
-ブログのソース管理もできて、言うことなしです。
+これで、WindowsでもMacでも、Githubに push すれば自動的にデプロイまでできるようになり、
+さらにブログのソース管理もできて、言うことなしです。
 

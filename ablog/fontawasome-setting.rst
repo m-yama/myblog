@@ -7,7 +7,7 @@
 アイコンが表示されるようにする
 ==============================
 
-カレンダーやタグなど、アイコンが表示されていなかったので、表示されるようにする。
+カレンダーやタグなどのアイコンが表示されていなかったので、表示されるようにする。
 
 .. figure:: images/fontawesome-setting-01.png
    
@@ -23,23 +23,23 @@ conf.py を確認
 
    fontawesome_link_cdn = True
 
-と設定されているが、うまく機能していない。マニュアルを見ると、
+と設定されていますが、うまく機能していないようです。マニュアルを見ると、
 
 http://ablog.readthedocs.io/manual/ablog-configuration-options/#fa
 
 ::
 
-   fontawesome_link_cdn was a *boolean* option, and now became a
-   *string* to enable using desired version of Font Awesome.
+   fontawesome_link_cdn was a boolean option, and now became a
+   string to enable using desired version of Font Awesome.
    To get the old behavior, use ...
 
-とあるので、以下のように変更してみた。
+とあるので、以下のように変更してみました。
 
 .. code-block:: python
 
    fontawesome_link_cdn = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'
 
-アイコンは表示されるようになったが、ビルドするときに、
+アイコンは表示されるようになりましたが、ビルドするときに、
 
 ::
 
@@ -47,13 +47,13 @@ http://ablog.readthedocs.io/manual/ablog-configuration-options/#fa
    loading translations [ja]... done
    WARNING: The config value `fontawesome_link_cdn' has type `str', defaults to `bool.'
 
-といった警告が出るようになってしまった。
+といった警告が出るようになってしまいました。
 
 
 Font Awesome をリソースに含める
 -------------------------------
 
-CDNにリンクするのではなく、サイト内に含めてしまうようにする。
+CDNにリンクするのではなく、サイト内に含めてしまうようにします。
 
 `Font Awesome <http://fontawesome.io/?utm_source=hackernewsletter>`_ からダウンロードし、以下のように配置。
 
@@ -65,7 +65,7 @@ CDNにリンクするのではなく、サイト内に含めてしまうよう�
       fonts/
          *
 
-*conf.py* を変更
+*conf.py* を以下のように変更。
 
 .. code-block:: python
 
@@ -73,5 +73,5 @@ CDNにリンクするのではなく、サイト内に含めてしまうよう�
    ... 
    fontawesome_css_file = 'css/font-awesome.min.css'
 
-ひとまずこれで、警告もなくアイコンが表示されるようになった。
+これで、警告もなくアイコンが表示されるようになりました。
 
