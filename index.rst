@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to MY BLOG
-=====================
+==================
 
 最近の投稿:
 
