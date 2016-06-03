@@ -15,7 +15,7 @@ iPadから、Githubで投稿してみた。
 iPadだけで画像も含められるか、試してみました。
 
 .. figure:: images/image.jpeg
-   :scale: 50%
+   :scale: 25%
    :align: center
 
    iPadで記事を書いているところ
