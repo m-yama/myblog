@@ -1,6 +1,6 @@
 .. post:: Jun 3, 2016
-   :tags: ipad
-   :category: misc
+   :tags: blog
+   :category: ablog
 
 
 iPadで投稿
@@ -35,4 +35,4 @@ Github上でreSTも確認できるので便利です。
 結論
 ----
 
-画像のフォルダ分けだけ調査が必要ですが、iPadで（頑張ればiPhoneでも）、Ablogの記事を投稿できそうです。
+画像のファイル名を変えられるのかどうかは分かりませんが、iPadでも投稿できそうです。
