@@ -1,6 +1,6 @@
 .. post:: Jun 3, 2016
-   :tags: blog
-   :category: ablog
+   :tags: ablog
+   :category: blog
 
 
 iPadで投稿
