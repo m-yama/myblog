@@ -32,9 +32,6 @@ blog_baseurl = u'https://m-yama.github.io/'
 #Github user name
 github_pages = 'm-yama'
 
-# Disqus integration
-disqus_shortname = 'm-yama'
-
 
 # -- Blog Authors, Languages, and Locations -----------------------------------
 
@@ -149,10 +146,10 @@ fontawesome_css_file = 'css/font-awesome.min.css'
 
 # You can enable Disqus_ by setting ``disqus_shortname`` variable.
 # Disqus_ short name for the blog.
-#disqus_shortname = None
+disqus_shortname = 'm-yama'
 
 # Choose to disqus pages that are not posts, default is ``False``.
-#disqus_pages = False
+disqus_pages = True
 
 # Choose to disqus posts that are drafts (without a published date),
 # default is ``False``.
@@ -255,7 +252,7 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'github_button': False,
+    'github_button': True,
     'travis_button': True,
     'github_user': 'm-yama',
     'github_repo': 'myblog',
