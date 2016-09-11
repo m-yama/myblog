@@ -7,7 +7,7 @@
 Smart Keyboard をゲットだぜ！
 =============================
 
- iPad Pro 9.7を買ってから今まではキーボードにMicrosoftのUniversal Mobile Keyboardを使っていましたが、やはりキーボードとiPadと2つのデバイスを持ち歩くのが煩わしく感じてきたので、先月あたりからSmartKeyboardが欲しくなってきました。
+iPad Pro 9.7を買ってから今まではキーボードにMicrosoftのUniversal Mobile Keyboardを使っていましたが、やはりキーボードとiPadと2つのデバイスを持ち歩くのが煩わしく感じてきたので、先月あたりからSmartKeyboardが欲しくなってきました。
 
 しかしやはり、16,800円という金額に中々手が出せずにいましたが、もしかするとアップルのイベントで何かあるかもしれないと思って待っていると、新キーボードはありませんでしたが、なんとSmartKeyboardの値段が下がっているではありませんか！（千円だけですが）
 
@@ -19,6 +19,9 @@ Smart Keyboard をゲットだぜ！
    :scale: 30%
 .. |package02| image:: images/package02.jpg
    :scale: 30%
+
+.. contents::
+   :local:
 
 開封の儀
 --------
