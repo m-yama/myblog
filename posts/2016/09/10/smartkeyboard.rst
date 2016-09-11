@@ -4,8 +4,8 @@
    :image: 0
 
 
-Smart Keyboard をゲットだぜ！
-=============================
+今さらSmart Keyboardを購入した話 
+================================
 
 iPad Pro 9.7を買ってから今まではキーボードにMicrosoftのUniversal Mobile Keyboardを使っていましたが、やはりキーボードとiPadと2つのデバイスを持ち歩くのが煩わしく感じてきたので、先月あたりからSmartKeyboardが欲しくなってきました。
 
@@ -17,6 +17,7 @@ iPad Pro 9.7を買ってから今まではキーボードにMicrosoftのUniversa
 
 .. |package01| image:: images/package01.jpg
    :scale: 30%
+
 .. |package02| image:: images/package02.jpg
    :scale: 30%
 
@@ -86,6 +87,13 @@ Safariでは以下のショートカットも使えます。
        | または
        | Shift + Space
 
+その他、以下のようなショートカットもあります。
+
+.. list-table::
+
+   * - 言語切り替え
+     - control + Space
+
 
 まとめ
 ------
@@ -98,4 +106,20 @@ Microsoft Universal Mobile KeyboardではMacと同じように英数・かなキ
 なにより、別途キーボードを持ち運ばなくても、基本的にカバーとして常に装着して、使いたいときにいつでもキーボードが出せる、というのがスマートでいい感じです。
 
 この投稿も、草稿はiPad Proの「メモ」アプリを使ってSmartKeyboardで作成し、iCloudでMacのメモアプリに同期して、細かい部分をMacで仕上げました。何かを作るのにわざわざMacを開かなくても、iPadでささっと作って、仕上げはMacで、ってのが今後のスタイルになりそうです。
+
+余談ですが、カバーの左右に付いている磁石の部分で、転がりやすいApple Pencilをこんな感じでくっつけておくこともできます。
+
+|pencil01| |pencil02| |pencil03| |pencil04|
+
+.. |pencil01| image:: images/pencil01.jpg
+   :scale: 30%
+
+.. |pencil02| image:: images/pencil02.jpg
+   :scale: 30%
+
+.. |pencil03| image:: images/pencil03.jpg
+   :scale: 30%
+
+.. |pencil04| image:: images/pencil04.jpg
+   :scale: 30%
 
