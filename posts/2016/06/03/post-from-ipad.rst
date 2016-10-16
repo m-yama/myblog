@@ -1,5 +1,5 @@
 .. post:: Jun 3, 2016
-   :tags: ablog
+   :tags: ablog, github
    :category: blog
 
 

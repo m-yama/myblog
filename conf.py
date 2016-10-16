@@ -19,7 +19,7 @@ import alabaster
 #blog_path = 'blog'
 
 # The “title” for the blog, used in acthive pages.  Default is ``'Blog'``.
-blog_title = u'MY BLOG'
+blog_title = u'M-Yama BLOG'
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
@@ -184,7 +184,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'MY BLOG'
+project = u'M-Yama BLOG'
 copyright = u'2016, m-yama'
 author = u'm-yama'
 
@@ -263,7 +263,7 @@ html_theme_path = [alabaster.get_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = u'MY BLOG'
+html_title = u'M-Yama BLOG'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
