@@ -1,6 +1,6 @@
 .. post:: Jul 17, 2016
-   :tags: blog
-   :category: gadget
+   :tags: gadget, vaio-phone
+   :category: blog
 
 
 VAIO Phone Bizを購入した話

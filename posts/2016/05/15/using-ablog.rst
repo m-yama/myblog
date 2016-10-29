@@ -1,5 +1,5 @@
 .. post:: May 15, 2016
-   :tags: ablog
+   :tags: ablog, sphinx
    :category: blog
 
 

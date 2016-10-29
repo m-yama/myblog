@@ -1,6 +1,6 @@
 .. post:: Sep 11, 2016
-   :tags: blog
-   :category: gadget
+   :tags: gadget, smartkeyboard
+   :category: blog
 
 
 今さらSmart Keyboardを購入した話 

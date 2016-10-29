@@ -1,6 +1,6 @@
 .. post::
-   :tags: blog
-   :category: gadget
+   :tags: github, 2FA 
+   :category: blog
 
 
 Githubにサインインできなくなった話

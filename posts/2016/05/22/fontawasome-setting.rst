@@ -1,5 +1,5 @@
 .. post:: May 22, 2016
-   :tags: ablog
+   :tags: ablog, fontawesome
    :category: blog
    :image: 0
 
