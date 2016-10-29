@@ -1,10 +1,10 @@
-.. post::
+.. post:: Oct 29, 2016
    :tags: gadget, iphone
    :category: blog
 
 
-iPhone 7 Plus に機種変更した話
-==============================
+(1) iPhone 7 Plus に機種変更した話
+==================================
 
 先日、iPhone 7 Plus をドコモオンラインショップで購入しました。
 
@@ -29,10 +29,10 @@ iPhone 7 Plus に機種変更した話
 プロファイルをインストールすることで復元できました。
 
 .. image:: images/IMG_7733.PNG
-   :align: center
+   :scale: 30%
 
 .. image:: images/IMG_7734.PNG
-   :align: center
+   :scale: 30%
 
 
 おサイフケータイ
@@ -60,14 +60,16 @@ dカードも作ろうか検討中です。iDとクイックペイと両方使�
 雑記
 ----
 
-イヤホンジャックはなくなりましたが、もともと音楽を聴かない人なので全く問題はありませんでした。
+オーディオジャックはなくなりましたが、もともと音楽を聴かない人なので全く問題はありませんでした。
 一応こんなアダプタも付属しているので、ヘッドホンを持っている人も無駄にならないと思います。
 
-.. image:: images/IMG_7739.JPG
-   :align: center
+.. figure:: images/IMG_7739.JPG
+   :scale: 30%
 
-Lightningケーブルのイヤホンも付いています。
+   Lightning - オーディオジャックのアダプタ
 
-.. image:: images/IMG_7740.JPG
-   :align: center
+.. figure:: images/IMG_7740.JPG
+   :scale: 30%
+
+   Lightningケーブルのイヤホン
 
