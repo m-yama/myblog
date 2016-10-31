@@ -1,10 +1,10 @@
 .. post:: May 16, 2016
-   :tags: ablog, github
+   :tags: ablog, github, sphinx
    :category: blog
 
 
-Githubにデプロイしてみる
-========================
+Ablogで書いたSphinxブログをGithubにデプロイしてみる
+===================================================
 
 *Github* にこのブログをデプロイをしてみる。
 ということで、初めてのリポジトリを作成。

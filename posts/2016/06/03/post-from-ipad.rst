@@ -1,10 +1,10 @@
 .. post:: Jun 3, 2016
-   :tags: ablog, github
+   :tags: ablog, sphinx, github
    :category: blog
 
 
-iPadで投稿
-============
+Ablogのブログ記事をiPadで投稿
+=============================
 
 iPadから、Githubで投稿してみた。
 

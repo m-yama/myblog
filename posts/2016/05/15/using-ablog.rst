@@ -3,8 +3,8 @@
    :category: blog
 
 
-ABlogを使ってみる
-=================
+ABlogを使ってSphinxでブログを書いてみる
+=======================================
 
 Sphinxでブログを書いてみたいと思い、Googleで検索したら `ABlog for Sphinx <http://ablog.readthedocs.io/>`_ というのが見つかったので、使ってみる。
 
