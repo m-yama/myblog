@@ -1,5 +1,5 @@
 .. post:: Feb 19, 2017
-   :tags: gadget, tablet
+   :tags: windows, font
    :category: blog
 
 
