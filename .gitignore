@@ -1,8 +1,10 @@
 .doctrees/
 __pycache__/
-_website/
 *.py[cod]
 
 .DS_Store
 
 *~
+
+_website/*
+!_website/blog/atom.xml
