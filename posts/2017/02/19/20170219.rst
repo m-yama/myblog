@@ -36,12 +36,12 @@ Officeを入れたりなんだかんだしている途中で気づいたので�
 『英語（米国）』に変更してPCを再起動すると解消され、
 その後、再度システムロケールを日本に戻しても正常に表示された。
 
-.. figure:: images/locale-setting1.jpg
+.. figure:: images/localesetting1.jpg
    :alt: 地域の設定1
    :align: center
    :scale: 70%
 
-.. figure:: images/locale-setting2.jpg
+.. figure:: images/localesetting2.jpg
    :alt: 地域の設定2
    :align: center
    :scale: 70%
