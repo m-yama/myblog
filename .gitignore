@@ -6,5 +6,5 @@ __pycache__/
 
 *~
 
-_website/*
+_website/
 !_website/blog/atom.xml
