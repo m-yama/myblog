@@ -1,5 +1,5 @@
 .. post:: Sep 11, 2016
-   :tags: gadget, smartkeyboard
+   :tags: gadget, keyboard
    :category: blog
 
 

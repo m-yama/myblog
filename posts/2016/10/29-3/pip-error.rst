@@ -1,5 +1,5 @@
 .. post:: Oct 29, 2016
-   :tags: python, pip
+   :tags: python
    :category: blog
 
 

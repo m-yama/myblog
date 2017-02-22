@@ -1,5 +1,5 @@
 .. post:: May 22, 2016
-   :tags: ablog, sphinx, fontawesome
+   :tags: ablog, sphinx, font
    :category: blog
    :image: 0
 

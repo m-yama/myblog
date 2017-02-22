@@ -1,5 +1,5 @@
 .. post:: Jul 17, 2016
-   :tags: gadget, vaio-phone
+   :tags: gadget, smartphone
    :category: blog
 
 

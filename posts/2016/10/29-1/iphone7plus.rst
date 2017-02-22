@@ -1,5 +1,5 @@
 .. post:: Oct 29, 2016
-   :tags: gadget, iphone
+   :tags: gadget, smartphone
    :category: blog
 
 

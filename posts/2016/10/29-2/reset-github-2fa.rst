@@ -1,5 +1,5 @@
 .. post:: Oct 29, 2016
-   :tags: github, 2FA 
+   :tags: github
    :category: blog
 
 
