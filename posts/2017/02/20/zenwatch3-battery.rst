@@ -121,7 +121,7 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    :明るさ: 1
 
-   他の設定は4日目と同じ
+   他の設定は前日と同じ
 
 .. linechart::
    :size: 760x240
@@ -141,7 +141,7 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    :ウォッチフェイス: Circular
 
-   他の設定は5日目と同じ
+   他の設定は前日と同じ
 
 .. linechart::
    :size: 760x240
@@ -163,7 +163,7 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    :明るさ: 1
 
-   他の設定は7日目と同じ。
+   他の設定は前日と同じ
 
    **前日再起動あり**
 
@@ -228,7 +228,7 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 （10日目）
 ----------------
 
-   設定は前日と同じ。
+   設定は前日と同じ
 
    **前日シャットダウン**
 
