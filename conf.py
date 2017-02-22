@@ -257,6 +257,8 @@ html_theme_options = {
     'travis_button': True,
     'github_user': 'm-yama',
     'github_repo': 'myblog',
+    'font_family': "'Hiragino Kaku Gothic Pro', Meiryo, Osaka, 'MS PGothic', arial, helvetica, sans-serif",
+    'font_size': '16px',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
