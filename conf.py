@@ -258,7 +258,7 @@ html_theme_options = {
     'github_user': 'm-yama',
     'github_repo': 'myblog',
     'font_family': "'Hiragino Kaku Gothic Pro', Meiryo, Osaka, 'MS PGothic', arial, helvetica, sans-serif",
-    'font_size': '15px',
+    'font_size': '16px',
     'head_font_family': "'Hiragino Kaku Gothic Pro', Meiryo, Osaka, 'MS PGothic', arial, helvetica, sans-serif",
 }
 
