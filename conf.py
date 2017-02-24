@@ -257,9 +257,9 @@ html_theme_options = {
     'travis_button': True,
     'github_user': 'm-yama',
     'github_repo': 'myblog',
-    'font_family': "'Hiragino Kaku Gothic Pro', Meiryo, Osaka, 'MS PGothic', arial, helvetica, sans-serif",
+    'font_family': u"Avenir, Roboto, 'YuGothic', '游ゴシック', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'MS PGothic', arial, helvetica, sans-serif",
     'font_size': '16px',
-    'head_font_family': "'Hiragino Kaku Gothic Pro', Meiryo, Osaka, 'MS PGothic', arial, helvetica, sans-serif",
+    'head_font_family': u"Avenir, Roboto, 'YuGothic', '游ゴシック', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, 'MS PGothic', arial, helvetica, sans-serif",
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
