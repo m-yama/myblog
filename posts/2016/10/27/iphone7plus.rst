@@ -1,10 +1,10 @@
-.. post:: Oct 29, 2016
+.. post:: Oct 27, 2016
    :tags: gadget, smartphone
    :category: blog
 
 
-(1) iPhone 7 Plus に機種変更した話
-==================================
+iPhone 7 Plus に機種変更した話
+==============================
 
 先日、iPhone 7 Plus をドコモオンラインショップで購入しました。
 

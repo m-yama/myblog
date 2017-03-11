@@ -33,11 +33,11 @@
 </content>
   </entry>
   <entry xml:base="https://m-yama.github.io/blog/atom.xml">
-    <title type="text">(3) pipでインストール中にエラーが出た話</title>
-    <id>https://m-yama.github.io/posts/2016/10/29-3/pip-error/</id>
+    <title type="text">pipでインストール中にエラーが出た話</title>
+    <id>https://m-yama.github.io/posts/2016/10/29/pip-error/</id>
     <updated>2016-10-29T00:00:00Z</updated>
     <published>2016-10-29T00:00:00Z</published>
-    <link href="https://m-yama.github.io/posts/2016/10/29-3/pip-error/" />
+    <link href="https://m-yama.github.io/posts/2016/10/29/pip-error/" />
     <author>
       <name></name>
     </author>
@@ -45,11 +45,11 @@
 </content>
   </entry>
   <entry xml:base="https://m-yama.github.io/blog/atom.xml">
-    <title type="text">(2) Githubにサインインできなくなった話</title>
-    <id>https://m-yama.github.io/posts/2016/10/29-2/reset-github-2fa/</id>
-    <updated>2016-10-29T00:00:00Z</updated>
-    <published>2016-10-29T00:00:00Z</published>
-    <link href="https://m-yama.github.io/posts/2016/10/29-2/reset-github-2fa/" />
+    <title type="text">Githubにサインインできなくなった話</title>
+    <id>https://m-yama.github.io/posts/2016/10/28/reset-github-2fa/</id>
+    <updated>2016-10-28T00:00:00Z</updated>
+    <published>2016-10-28T00:00:00Z</published>
+    <link href="https://m-yama.github.io/posts/2016/10/28/reset-github-2fa/" />
     <author>
       <name></name>
     </author>
@@ -59,11 +59,11 @@ Githubにログインできなくなってしまいました。&lt;/p&gt;
 </content>
   </entry>
   <entry xml:base="https://m-yama.github.io/blog/atom.xml">
-    <title type="text">(1) iPhone 7 Plus に機種変更した話</title>
-    <id>https://m-yama.github.io/posts/2016/10/29-1/iphone7plus/</id>
+    <title type="text">iPhone 7 Plus に機種変更した話</title>
+    <id>https://m-yama.github.io/posts/2016/10/27/iphone7plus/</id>
     <updated>2016-10-31T00:00:00Z</updated>
-    <published>2016-10-29T00:00:00Z</published>
-    <link href="https://m-yama.github.io/posts/2016/10/29-1/iphone7plus/" />
+    <published>2016-10-27T00:00:00Z</published>
+    <link href="https://m-yama.github.io/posts/2016/10/27/iphone7plus/" />
     <author>
       <name></name>
     </author>
