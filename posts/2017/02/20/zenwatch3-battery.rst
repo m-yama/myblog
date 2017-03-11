@@ -2,6 +2,8 @@
    :tags: gadget, smartwatch
    :category: blog
 
+.. _post-feb20-2017:
+
 Zenwatch3のバッテリー持続時間が短い件
 =====================================
 
@@ -24,6 +26,13 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
 ちなみにiPhoneで使用しているが、iOSのBluetooth周りの不具合のせいか、
 接続が頻繁に切れるのが困る。
+
+
+.. update:: Mar 11, 2017
+
+   Androidで使用した場合について記載。
+
+   :ref:`post-mar11-2017`
 
 
 バッテリー残量に関する記録
