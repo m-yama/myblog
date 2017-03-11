@@ -5,6 +5,8 @@ Welcome to M-Yama BLOG
 
 .. postlist:: 10
    :excerpts:
+   :list-style: circle
+   :date: %b %d, %Y
 
 
 .. `toctree` directive, below, contains list of non-post `.rst` files.
