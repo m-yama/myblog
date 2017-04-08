@@ -8,10 +8,10 @@
   <generator uri="http://ablog.readthedocs.org" version="0.8.4">ABlog</generator>
   <entry xml:base="https://m-yama.github.io/blog/atom.xml">
     <title type="text">Zenwatch3をAndroidに接続したらバッテリーが長持ちした</title>
-    <id>https://m-yama.github.io/posts/2017/0311/article/</id>
+    <id>https://m-yama.github.io/posts/2017/03/11/zenwatch3-android/</id>
     <updated>2017-03-11T00:00:00Z</updated>
     <published>2017-03-11T00:00:00Z</published>
-    <link href="https://m-yama.github.io/posts/2017/0311/article/" />
+    <link href="https://m-yama.github.io/posts/2017/03/11/zenwatch3-android/" />
     <author>
       <name></name>
     </author>
