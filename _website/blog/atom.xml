@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">M-Yama BLOG</title>
   <id>https://m-yama.github.io/blog/atom.xml</id>
-  <updated>2017-07-16T00:00:00Z</updated>
+  <updated>2017-07-17T00:00:00Z</updated>
   <link href="https://m-yama.github.io/" />
   <link href="https://m-yama.github.io/blog/atom.xml" rel="self" />
   <generator uri="http://ablog.readthedocs.org" version="0.8.4">ABlog</generator>
+  <entry xml:base="https://m-yama.github.io/blog/atom.xml">
+    <title type="text">ablog build でエラー</title>
+    <id>https://m-yama.github.io/posts/2017/07/17/ablog-build-error/</id>
+    <updated>2017-07-17T00:00:00Z</updated>
+    <published>2017-07-17T00:00:00Z</published>
+    <link href="https://m-yama.github.io/posts/2017/07/17/ablog-build-error/" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;code class=&quot;docutils literal&quot;&gt;&lt;span class=&quot;pre&quot;&gt;ablog&lt;/span&gt; &lt;span class=&quot;pre&quot;&gt;build&lt;/span&gt;&lt;/code&gt; を実行すると、ローカルではビルドが通るが、GithubにプッシュしてTravisでビルドが実行された時に、&lt;/p&gt;
+</content>
+  </entry>
   <entry xml:base="https://m-yama.github.io/blog/atom.xml">
     <title type="text">シャープの電子ノートを買った話</title>
     <id>https://m-yama.github.io/posts/2017/07/16/sharp-wg-s30/</id>
