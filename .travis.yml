@@ -7,7 +7,6 @@ virtualenv:
     system_site_packages: true
 
 before_install:
-  - pip uninstall sphinx
   - pip install sphinx==1.5.6
   - pip install ablog
   - pip install sphinxcontrib-googlechart
