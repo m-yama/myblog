@@ -1,5 +1,5 @@
-Welcome to M-Yama BLOG
-======================
+M-Yama BLOG
+===========
 
 最近の投稿:
 
