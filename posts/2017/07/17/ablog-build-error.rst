@@ -3,6 +3,8 @@
    :category: blog
 
 
+.. _ablog-build-error:
+
 ablog build でエラー
 =====================
 
@@ -20,7 +22,7 @@ ablog build でエラー
 
 Shinx 1.6 から発生するようになったエラーのようなので、 `.travis.yml` に以下の一文を追加。
 
-.. code-block:: yaml
+.. code-block:: diff
 
     before_install:
    +  - pip install sphinx==1.5.6
