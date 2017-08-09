@@ -5,7 +5,7 @@ M-Yama BLOG
 
 .. postlist:: 10
    :excerpts:
-   :list-style: circle
+   :list-style: disk
    :date: %b %d, %Y
 
 
