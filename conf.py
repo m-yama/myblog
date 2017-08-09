@@ -101,6 +101,7 @@ html_sidebars = {
             'recentposts.html', 'tagcloud.html',
             'categories.html',  'archives.html',
             'searchbox.html',
+            'twitter.html',
             ],
     }
 
