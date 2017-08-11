@@ -19,6 +19,18 @@
 </content>
   </entry>
   <entry xml:base="https://m-yama.github.io/blog/atom.xml">
+    <title type="text">Server Name Indication チェックが出来ない警告ログ</title>
+    <id>https://m-yama.github.io/posts/2017/08/11/travis-warning-log/</id>
+    <updated>2017-08-11T00:00:00Z</updated>
+    <published>2017-08-11T00:00:00Z</published>
+    <link href="https://m-yama.github.io/posts/2017/08/11/travis-warning-log/" />
+    <author>
+      <name></name>
+    </author>
+    <content type="html">&lt;p&gt;Travisのビルドログをよく見ると、「Server Name Indication (SNI) のチェックが出来ないからリンクが壊れるかも」みたいな警告が出ていた。&lt;/p&gt;
+</content>
+  </entry>
+  <entry xml:base="https://m-yama.github.io/blog/atom.xml">
     <title type="text">ablog build でまたしてもエラー</title>
     <id>https://m-yama.github.io/posts/2017/08/10/ablog-build-error-occured-in-docutils/</id>
     <updated>2017-08-10T00:00:00Z</updated>
