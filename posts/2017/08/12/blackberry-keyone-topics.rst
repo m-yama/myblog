@@ -40,8 +40,7 @@ BlackBerry KEYone を使っていて発見した小ネタ。
 
 カーソルモードで、キーボードの左側をタップすると一文字左にカーソル移動、右側だと右に一文字移動、中間の上側で上に一つ移動、下側で下に一つ移動できる。 
 
-| 詳しくはこちら。 
-| http://help.blackberry.com/ja/keyboard/latest/help/mar1427391285656.html 
+`詳しくはこちらのサポートページにある図を参照してください。 <http://help.blackberry.com/ja/keyboard/latest/help/mar1427391285656.html>`_
 
 
 「検索」のショートカットについて
