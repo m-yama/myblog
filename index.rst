@@ -1,9 +1,11 @@
 M-Yama BLOG
 ===========
 
+*ガジェット、プログラミング関連のブログ*
+
 最近の投稿:
 
-.. postlist:: 10
+.. postlist:: 15
    :excerpts:
    :list-style: disk
    :date: %b %d, %Y
