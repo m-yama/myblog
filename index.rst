@@ -3,12 +3,10 @@ M-Yama BLOG
 
 *ガジェット、プログラミング関連のブログ*
 
-最近の投稿:
 
-.. postlist:: 15
-   :excerpts:
+.. postlist::
    :list-style: disk
-   :date: %b %d, %Y
+   :date: %Y-%m-%d
 
 
 .. `toctree` directive, below, contains list of non-post `.rst` files.
