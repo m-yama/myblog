@@ -55,12 +55,8 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
    :AsusZenfit: 使用
    :Google Fit: OFF
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 30, 6, 5
-   battery.axis: x
-   battery.axis_label: AM6, PM5, PM9, PM10
+.. figure:: images/day2.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
@@ -84,12 +80,8 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
    :AsusZenfit: 通知をブロック
    :Google Fit: OFF
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 90, 80, 68, 35, 30, 20, 13
-   battery.axis: x
-   battery.axis_label: AM6, AM8.30, AM10, PM0, PM5, PM6, PM7, PM8
+.. figure:: images/day3.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
@@ -112,13 +104,9 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
    :ウォッチフェイス: Lux Copper
    :AsusZenfit: 通知ブロック
 
-.. linechart::
-   :size: 760x240
+.. figure:: images/day4.png
+   :align: left
 
-   battery: 100, 80, 74, 53, 42, 24
-   battery.axis: x 
-   battery.axis_label: AM6, AM10, AM11.15, PM2.30, PM4.30, PM20
-   
 .. csv-table::
    :stub-columns: 1
 
@@ -132,12 +120,8 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    他の設定は前日と同じ
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 93, 88, 80, 76, 72, 70, 68, 65, 62, 60, 56, 53, 50, 45, 37, 30, 19
-   battery.axis: x
-   battery.axis_label: AM6, AM8.30, AM10, AM11, PM0, PM1, PM1.30, PM2, PM2.48, PM3.20, PM4, PM4.30, PM5.15, PM6, PM7, PM8.10, PM9, PM10.30
+.. figure:: images/day5.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
@@ -152,12 +136,8 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    他の設定は前日と同じ
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 89, 85, 65, 57, 48, 43, 36, 26
-   battery.axis: x
-   battery.axis_label: AM6, AM8.30, AM9, PM0.15, PM1.30, PM3.20, PM4, PM5.20, PM6.45
+.. figure:: images/day6.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
@@ -176,12 +156,8 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    **前日再起動あり**
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 89, 79, 71, 65, 61, 42, 38, 25
-   battery.axis: x
-   battery.axis_label: AM6, AM9, AM10.40, PM0.10, PM1.30, PM2.15, PM6.40, PM7.15, PM9.15
+.. figure:: images/day7.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
@@ -196,12 +172,8 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    **前日再起動なし**
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 86, 66, 34, 26, 19
-   battery.axis: x
-   battery.axis_label: AM6.15, AM8.30, PM0.10, PM6.20, PM7.50, PM9.00
+.. figure:: images/day8.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
@@ -218,12 +190,8 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    **前日再起動あり**
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 91, 71, 66, 51, 41, 23, 20
-   battery.axis: x
-   battery.axis_label: AM6, AM8.30, PM0, PM1, PM4.15, PM6.20, PM8.30, PM9
+.. figure:: images/day9.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
@@ -241,12 +209,8 @@ https://forum.xda-developers.com/zenwatch-3/help/battery-life-real-bad-t3506927
 
    **前日シャットダウン**
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 87, 76, 66, 60, 53, 43, 35, 31
-   battery.axis: x
-   battery.axis_label: AM6, AM10.50, PM0.30, PM3, PM4.20, PM5.40, PM7.40, PM9, PM9.30
+.. figure:: images/day10.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1

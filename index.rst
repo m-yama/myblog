@@ -4,7 +4,7 @@ M-Yama BLOG
 *ガジェット、プログラミング関連のブログ*
 
 
-.. postlist::
+.. postlist:: 100
    :list-style: disk
    :date: %Y-%m-%d
 

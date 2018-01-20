@@ -22,12 +22,8 @@ Zenwatch3をAndroidケータイに接続して使用すると、iPhoneで使用�
 
    その他の設定はデフォルトのまま。
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 95, 70, 61, 58
-   battery.axis: x
-   battery.axis_label: AM6, AM8.30, PM5, PM7.20, PM8.20
+.. figure:: images/day1.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
@@ -41,12 +37,8 @@ Zenwatch3をAndroidケータイに接続して使用すると、iPhoneで使用�
    * 設定は前日と同じ
    * 前日再起動なし
 
-.. linechart::
-   :size: 760x240
-
-   battery: 100, 94, 79, 73, 61, 52
-   battery.axis: x
-   battery.axis_label: AM6, AM8.30, PM0.30, PM2.20, PM6, PM9 
+.. figure:: images/day2.png
+   :align: left
 
 .. csv-table::
    :stub-columns: 1
