@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - 3.6
+  - "3.6"
 
 virtualenv:
     system_site_packages: true
@@ -18,4 +18,4 @@ after_success:
   - git config --global user.name "m-yama"
   - git config --global user.email "myama.1122@outlook.jp"
   - git config --global push.default simple
-  - ablog deploy --push-quietly --github-token=DEPLOY_KEY2 -m="`git log -1 --pretty=%B`"
+  - ablog deploy --push-quietly --github-token=DEPLOY_KEY -m="`git log -1 --pretty=%B`"
