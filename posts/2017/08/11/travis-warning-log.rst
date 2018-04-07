@@ -25,7 +25,13 @@ Travisのビルドログをよく見ると、「Server Name Indication (SNI) の
 対応
 ----
 
-*sphinxcontrib.googlechart* を使っている投稿があるのでPython3は使えない（対応していないのでビルドエラーになる）し、 *.travis.yml* でPythonのバージョンを 2.7 にするとTravis上で使われるPythonのバージョンは 2.7.3 になるので、 ``requests[security]`` を入れる、ということで落ち着いた。
+*sphinxcontrib.googlechart* を使っている投稿があるのでPython3は使えない（対応していないのでビルドエラーになる）し、 *.travis.yml* でPythonのバージョンを 2.7 にするとTravis上で使われるPythonのバージョンは 2.7.3 になるの（※下記Update参照）で、 ``requests[security]`` を入れる、ということで落ち着いた。
+
+.. update:: Mar 14, 2018
+
+   :ref:`post-apr-07-2018`
+
+
 
 *.travis.yml* に、以下の一文を追加。
 
