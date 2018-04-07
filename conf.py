@@ -149,7 +149,7 @@ fontawesome_css_file = 'css/font-awesome.min.css'
 disqus_shortname = 'm-yama'
 
 # Choose to disqus pages that are not posts, default is ``False``.
-disqus_pages = True
+#disqus_pages = True
 
 # Choose to disqus posts that are drafts (without a published date),
 # default is ``False``.
