@@ -252,7 +252,7 @@ html_theme = 'alabaster'
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'github_button': True,
+    'github_button': False,
     'travis_button': True,
     'github_user': 'm-yama',
     'github_repo': 'myblog',
