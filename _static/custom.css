@@ -1,3 +1,49 @@
+div.body p,
+div.body dd,
+div.body li {
+    line-height: 1.9em;
+}
+
+div.body p+p {
+    margin-top: 1.5em;
+}
+
+.head,
+.stub {
+    background-color: #fafafa;
+}
+
+div.admonition p.admonition-title {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+div.topic {
+    background-color: #fff;
+    padding: 0;
+}
+p.topic-title {
+    padding-left: .5em;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ccc;
+}
+
+div.note {
+    background-color: #fff;
+}
+
+div.note p.first+p {
+    margin-top: 1em;
+}
+
+div.admonition {
+    padding: 10px 20px;
+}
+
+pre {
+    background-color: #f8f8ff;
+}
+
 div.body h1 {
     font-size: 200%;
     font-weight: 700;
@@ -43,6 +89,10 @@ div.sphinxsidebar a {
 
 .search input[type=submit] {
     margin-top: 3px;
+}
+
+postlist li {
+    ligh-height: normal;
 }
 
 @media screen and (max-width: 870px) {
