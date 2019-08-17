@@ -7,18 +7,13 @@ BlackBerry KEYone 小ネタ集
 
 BlackBerry KEYone を使っていて発見した小ネタ。
 
-参考
-^^^^
-
 | サポートページで、機能やヒントが紹介されています。
 | https://www.blackberrymobile.com/support/keyone/device-help/
 
 なお、プリインストールされている「BlackBerryヘルプ」アプリにもいろんなヒントが書かれています。 
 
-目次
-^^^^
 
-.. contents::
+.. contents:: 目次
    :local:
 
 .. update:: Oct 01, 2017
