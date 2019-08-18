@@ -118,7 +118,14 @@ div.sphinxsidebar a {
 
 /* list */
 @media screen and (max-width: 870px) {
-    ul {
+    ul, ol {
+        margin-left: 10px;
+    }
+
+    div.topic ul,
+    div.topic ol,
+    div.note ul,
+    div.note ol {
         margin-left: 30px;
     }
 }
