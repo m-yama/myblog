@@ -6,18 +6,23 @@
 今さらSmart Keyboardを購入した話 
 ================================
 
+|img1| |img2| |br|
 iPad Pro 9.7を買ってから今まではキーボードにMicrosoftのUniversal Mobile Keyboardを使っていましたが、やはりキーボードとiPadと2つのデバイスを持ち歩くのが煩わしく感じてきたので、先月あたりからSmartKeyboardが欲しくなってきました。
-|package01| |package02|
+
+.. |br| raw:: html
+
+   <br>
+
+.. |img1| image:: images/package01.jpg
+   :scale: 20%
+
+.. |img2| image:: images/package02.jpg
+   :scale: 20%
 
 しかしやはり、16,800円という金額に中々手が出せずにいましたが、もしかするとアップルのイベントで何かあるかもしれないと思って待っていると、新キーボードはありませんでしたが、なんとSmartKeyboardの値段が下がっているではありませんか！（千円だけですが）
 
 で、我慢できずにぽちりました。
 
-.. |package01| image:: images/package01.jpg
-   :scale: 30%
-
-.. |package02| image:: images/package02.jpg
-   :scale: 30%
 
 .. contents::
    :local:

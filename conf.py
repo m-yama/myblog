@@ -63,7 +63,7 @@ blog_languages = {
 
 # -- Blog Post Related --------------------------------------------------------
 
-# post_date_format = '%b %d, %Y'
+post_date_format = '%Y-%m-%d'
 
 
 # Number of paragraphs (default is ``1``) that will be displayed as an excerpt

@@ -6,19 +6,22 @@
 VAIO Phone Bizを購入した話
 ==========================
 
+|img-front| |img-back| |br|
 VAIO Phone Biz を買って１ヶ月ほど経ったので、簡単に感想を書いてみたいと思います。
+
+.. |br| raw:: html
+
+   <br>
+
+.. |img-front| image:: images/vaio-phone-biz-front.jpg
+   :scale: 20%
+
+.. |img-back| image:: images/vaio-phone-biz-back.jpg
+   :scale: 20%
 
 といっても、ほとんどWiFiルーター替わりぐらいにしか使ってないので、
 大して書けることはありませんが・・・
 
-
-|img-front| |img-back|
-
-.. |img-front| image:: images/vaio-phone-biz-front.jpg
-   :scale: 30%
-
-.. |img-back| image:: images/vaio-phone-biz-back.jpg
-   :scale: 30%
 
 
 良かった点

@@ -7,14 +7,18 @@
 シャープの電子ノートを買った話
 ==============================
 
+|img| |br|
 今更ながら、シャープの電子ノート「WG-S30-B」を購入した。2年も前に発売された端末。
 
-（外観）
-   .. figure:: image/image.jpeg
-      :scale: 25%
+.. |br| raw:: html
 
-（本体に用意されているサンプルの一部）
-   |image2| |image3| |image4|
+   <br>
+
+.. |img| image:: image/image.jpeg
+   :scale: 20%
+
+
+|image2| |image3| |image4|
 
 .. |image2| image:: image/image2.jpeg
    :scale: 25%

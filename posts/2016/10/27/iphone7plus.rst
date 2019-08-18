@@ -6,10 +6,15 @@
 iPhone 7 Plus に機種変更した話
 ==============================
 
+|img| |br|
 先日、iPhone 7 Plus をドコモオンラインショップで購入しました。
 
-.. image:: images/IMG_7736.JPG
-   :scale: 30%
+.. |br| raw:: html
+
+   <br>
+
+.. |img| image:: images/IMG_7736.JPG
+   :scale: 20%
 
 
 まずはバックアップ

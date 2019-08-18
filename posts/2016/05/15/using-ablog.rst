@@ -36,7 +36,6 @@ WindowsではPython2.7で動かすようにしたら、上記のエラーは出�
 .. update:: May 20, 2016
 
    Python3から encoding 引数が追加され、デフォルトではOSで設定されている既定の文字コードが使われるようです。
-
    `組み込み関数 - open() <http://docs.python.jp/3.3/library/functions.html#open>`_
 
 

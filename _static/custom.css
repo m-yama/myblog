@@ -1,23 +1,58 @@
+@media screen and (min-width: 1000px) {
+    div.document {
+        width: 1000px;
+    }
+}
+
 div.body p,
 div.body dd,
 div.body li {
     line-height: 1.9em;
 }
-
 div.body p+p {
     margin-top: 1.5em;
 }
+div.body p.first+p {
+    margin-top: 1em;
+}
 
+/* postlist */
+.postlist li {
+    ligh-height: normal;
+    margin-top: 2rem;
+}
+ul.postlist p.first+p {
+    margin-top: 0;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+ul.postlist p.first>a::after {
+    content: "\A";
+    white-space: pre;
+}
+ul.postlist p.first {
+    margin-block-end: 0;
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #666;
+}
+ul.postlist p.first>a {
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-style: normal !important;
+}
+
+/* table */
 .head,
 .stub {
     background-color: #fafafa;
 }
 
+/* topic, note */
 div.admonition p.admonition-title {
-    font-size: 1.2em;
-    font-weight: 700;
+    font-size: 1em;
+    color: #666;
 }
-
 div.topic {
     background-color: #fff;
     padding: 0;
@@ -27,74 +62,61 @@ p.topic-title {
     background-color: #fafafa;
     border-bottom: 1px solid #ccc;
 }
-
 div.note {
-    background-color: #fff;
+    background-color: #f5f5f5;
+    border: none;
 }
-
-div.note p.first+p {
-    margin-top: 1em;
-}
-
 div.admonition {
     padding: 10px 20px;
 }
 
+/* code-block */
 pre {
     background-color: #f8f8ff;
 }
 
+/* h1 - h6 */
 div.body h1 {
     font-size: 200%;
     font-weight: 700;
 }
-
 div.body h2 {
     font-size: 150%;
     font-weight: 700;
     border-bottom: 1px solid #e7e9ee;
 }
-
 div.body h3 {
     font-size: 130%;
     font-weight: 700;
 }
-
 div.body h4 {
     font-size: 110%;
     font-weight: 700;
 }
-
 div.body h5,
 div.body h6 {
     font-size: 100%;
     font-weight: 700;
 }
 
+/* link */
 a {
     text-decoration: none;
 }
-
 a.reference {
     border-bottom: none;
 }
-
 a:hover {
     text-decoration: none;
 }
-
 div.sphinxsidebar a {
     border-bottom: none;
 }
-
 .search input[type=submit] {
     margin-top: 3px;
 }
 
-postlist li {
-    ligh-height: normal;
-}
-
+/* list */
 @media screen and (max-width: 870px) {
     ul {
         margin-left: 30px;
