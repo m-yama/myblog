@@ -86,6 +86,7 @@ div.body h2 {
     border-bottom: 1px solid #e7e9ee;
     border-left: 6px solid #d3d3d3;
     padding-left: 10px;
+    clear: both;
 }
 div.body h3 {
     font-size: 130%;
