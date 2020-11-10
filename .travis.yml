@@ -12,6 +12,7 @@ before_install:
   - pip install ablog
 
 script:
+  - ablog clean
   - ablog build
 
 after_success:
