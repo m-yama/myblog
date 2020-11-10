@@ -19,11 +19,11 @@ import alabaster
 #blog_path = 'blog'
 
 # The "title" for the blog, used in acthive pages.  Default is ``'Blog'``.
-blog_title = u'M-Yama BLOG'
+blog_title = 'M-Yama BLOG'
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
-blog_baseurl = u'https://m-yama.github.io/'
+blog_baseurl = 'https://m-yama.github.io/'
 
 # Choose to archive only post titles. Archiving only titles can speed
 # up project building.
@@ -184,9 +184,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'M-Yama BLOG'
-copyright = u'2016, m-yama'
-author = u'm-yama'
+project = 'M-Yama BLOG'
+copyright = '2016, m-yama'
+author = 'm-yama'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -266,7 +266,7 @@ html_theme_path = [alabaster.get_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = u'M-Yama BLOG'
+html_title = 'M-Yama BLOG'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
