@@ -7,30 +7,26 @@
 div.body p,
 div.body dd,
 div.body li {
-    line-height: 1.9em;
+    line-height: 2em;
 }
-div.body p+p {
-    margin-top: 1.5em;
-}
-div.body p.first+p {
-    margin-top: 1em;
-}
-
 /* postlist */
 .postlist li {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 ul.postlist p {
     margin-top: 0;
-    font-size: .9em;
+    margin-bottom: .5em;
     line-height: 1.5em;
+}
+ul.postlist p:first-child {
+    color: gray;
+    font-size: .9em;
 }
 ul.postlist a.internal::after {
     content: "\A";
     white-space: pre;
 }
 ul.postlist {
-    font-size: .9em;
     line-height: 1.5em;
     color: #666;
 }
