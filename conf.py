@@ -339,7 +339,7 @@ html_search_language = 'ja'
 
 # A dictionary with options for the search language support, empty by default.
 # Now only 'ja' uses this config value
-html_search_options = {'type': 'default'}
+#html_search_options = {'type': 'default'}
 
 # The name of a javascript file (relative to the configuration directory) that
 # implements a search results scorer. If empty, the default will be used.
