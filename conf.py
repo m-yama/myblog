@@ -29,9 +29,9 @@ blog_baseurl = u'https://m-yama.github.io/'
 # up project building.
 #blog_archive_titles = False
 
-#Github user name
+#Github
 github_pages = 'm-yama'
-
+github_url = 'https://github.com/m-yama'
 
 # -- Blog Authors, Languages, and Locations -----------------------------------
 
