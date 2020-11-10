@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
   <id>https://m-yama.github.io/</id>
   <title>M-Yama BLOG</title>
-  <updated>2020-11-10T08:00:03.535555+00:00</updated>
+  <updated>2020-11-10T08:42:30.948415+00:00</updated>
   <link href="https://m-yama.github.io/"/>
   <link href="https://m-yama.github.io/blog/atom.xml"/>
   <generator uri="https://ablog.readthedocs.org" version="0.10.12">ABlog</generator>
@@ -203,10 +203,8 @@ Windowsを起動してサインイン画面でPINコードを入力しようと�
     <id>https://m-yama.github.io/posts/2019/08/15/onemix3_caps_to_ime_switch/</id>
     <title>OneMix3でCapsキーをIMEオン/オフキーに変更した</title>
     <updated>2019-08-15T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;&lt;img alt="img" src="../_images/IMG_20190818_1743499.jpg" style="width: 198.8px; height: 172.8px;" /&gt; &lt;br&gt;
-USキーボードでは日本語・英語入力の切り替えは Alt + チルダ でできますが、
-OneMix3はチルダが押しづらい位置にあるので、あまり使わないCapsキーをIMEオン・オフに変更しました。
-Capsは死にますが、左手小指だけで日本語・英語の入力を切り替えられるようになって幸せです。&lt;/p&gt;
+    <content type="html">&lt;p&gt;No directive entry for &amp;quot;image&amp;quot; in module &amp;quot;docutils.parsers.rst.languages.ja&amp;quot;.
+Using English fallback for directive &amp;quot;image&amp;quot;.&lt;/p&gt;
 </content>
     <link href="https://m-yama.github.io/posts/2019/08/15/onemix3_caps_to_ime_switch/" rel="alternate"/>
     <published>2019-08-15T00:00:00+09:00</published>

@@ -27,6 +27,8 @@ Capsは死にますが、左手小指だけで日本語・英語の入力を切�
 
 レジストリに、以下の内容を追加。
 
+*CapsLock_to_F13.reg* 
+
 .. code-block:: none
 
    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]

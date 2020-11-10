@@ -35,7 +35,6 @@ ul.postlist {
     color: #666;
 }
 ul.postlist a.internal {
-    font-weight: 700;
     font-size: 1.2rem;
     font-style: normal !important;
 }
