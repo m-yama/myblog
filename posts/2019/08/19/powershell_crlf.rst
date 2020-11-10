@@ -8,14 +8,16 @@ Powershellで改行コードをCRLFに一括置換する
 Powershellで、フォルダ内（サブフォルダ含む）のファイルの改行コードをCRLFに一括置換する。
 
 
-**CSVだけ対象にし、文字コードがShift_JISの場合:**
+CSVだけ対象にし、文字コードがShift_JISの場合
+--------------------------------------------
 
 .. code-block:: powershell
 
    ls -r -file -filter *.csv | % { (get-content -encoding Default $_.FullName) -join "`r`n" | set-content -encoding Default $_.FullName }
 
 
-**CSV以外を対象にし、文字コードがUTF8の場合:**
+CSV以外を対象にし、文字コードがUTF8の場合
+-----------------------------------------
 
 .. code-block:: powershell
 
