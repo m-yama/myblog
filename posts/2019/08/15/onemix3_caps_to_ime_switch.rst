@@ -27,10 +27,12 @@ Capsは死にますが、左手小指だけで日本語・英語の入力を切�
 
 レジストリに、以下の内容を追加。
 
-*CapsLock_to_F13.reg* 
+*Caps_to_F13.reg*
 
 .. code-block:: none
 
+   Windows Registry Editor Version 5.00
+   
    [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout]
    "Scancode Map"=hex:00,00,00,00,00,00,00,00,02,00,00,00,64,00,3a,00,00,00,00,00
 
