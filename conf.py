@@ -253,7 +253,7 @@ html_theme = 'alabaster'
 # documentation.
 html_theme_options = {
     'github_button': False,
-    'travis_button': True,
+    'travis_button': False,
     'github_user': 'm-yama',
     'github_repo': 'myblog',
     'font_family': u'Avenir, Roboto, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS PGothic", arial, helvetica, sans-serif',
