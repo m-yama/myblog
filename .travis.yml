@@ -9,9 +9,7 @@ python:
   - "3.7"
 
 before_install:
-  - pip install sphinx==3.3.0
-  - pip install docutils==0.16
-  - pip install ablog==0.10.12
+  - pip install ablog
 
 script:
   - ablog build
