@@ -18,7 +18,7 @@ import alabaster
 # A path relative to the configuration directory for blog archive pages.
 #blog_path = 'blog'
 
-# The “title” for the blog, used in acthive pages.  Default is ``'Blog'``.
+# The "title" for the blog, used in acthive pages.  Default is ``'Blog'``.
 blog_title = u'M-Yama BLOG'
 
 # Base URL for the website, required for generating feeds.
@@ -256,9 +256,9 @@ html_theme_options = {
     'travis_button': False,
     'github_user': 'm-yama',
     'github_repo': 'myblog',
-    'font_family': u'Avenir, Roboto, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS PGothic", arial, helvetica, sans-serif',
+    'font_family': 'Avenir, Roboto, "Yu Gothic Medium", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Osaka, arial, helvetica, sans-serif',
     'font_size': '16px',
-    'head_font_family': u'Avenir, Roboto, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS PGothic", arial, helvetica, sans-serif',
+    'head_font_family': 'Avenir, Roboto, "Yu Gothic Medium", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Osaka, arial, helvetica, sans-serif',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
