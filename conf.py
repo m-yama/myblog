@@ -31,7 +31,7 @@ blog_baseurl = 'https://m-yama.github.io/'
 
 #Github
 github_pages = 'm-yama'
-
+github_is_http = True
 
 # -- Blog Authors, Languages, and Locations -----------------------------------
 

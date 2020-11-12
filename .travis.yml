@@ -18,4 +18,4 @@ after_success:
   - git config --global user.name "m-yama"
   - git config --global user.email "myama.1122@outlook.jp"
   - git config --global push.default simple
-  - ablog deploy --push-quietly --github-token=DEPLOY_KEY -m="`git log -1 --pretty=%B`" --github-url=https://github.com/m-yama/
+  - ablog deploy --push-quietly --github-token=DEPLOY_KEY -m="`git log -1 --pretty=%B`"
