@@ -11,9 +11,9 @@ Ablogのバージョンをアップグレード
 ablog deploy できなくなった
 ---------------------------
 
-記事を書いて github に push すると、Travis でビルドされて github.io に自動でデプロイされる、という仕組みで運用しているのですが、 ``ablog deploy`` のところでコケるようになってしまいました。
+記事を書いて github に push すると、Travis CI でビルドされて github.io に自動でデプロイされる、という仕組みで運用しているのですが、 ``ablog deploy`` のところでコケるようになってしまいました。
 
-github と Travis は https で連携するようにしていたのですが、どうやら ssh で clone しようとしてエラーになっているようです。
+github と Travis CI は https で連携するようにしていたのですが、どうやら ssh で clone しようとしてエラーになっているようです。
 
 .. code-block:: sh
 
