@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
   <id>https://m-yama.github.io/</id>
   <title>M-Yama BLOG</title>
-  <updated>2020-11-12T06:50:49.110521+00:00</updated>
+  <updated>2020-11-17T06:10:36.848122+00:00</updated>
   <link href="https://m-yama.github.io/"/>
   <link href="https://m-yama.github.io/blog/atom.xml"/>
   <generator uri="https://ablog.readthedocs.org" version="0.10.12">ABlog</generator>
@@ -220,12 +220,12 @@ Capsは死にますが、左手小指だけで日本語・英語の入力を切�
     <published>2019-08-19T00:00:00+09:00</published>
   </entry>
   <entry>
-    <id>https://m-yama.github.io/posts/2020/1112/ablog_upgrade/</id>
+    <id>https://m-yama.github.io/posts/2020/11-12/ablog_upgrade/</id>
     <title>Ablogのバージョンをアップグレード</title>
     <updated>2020-11-12T00:00:00+09:00</updated>
     <content type="html">&lt;p&gt;今まで ablog バージョンを指定して古いバージョンを使い続けていましたが、気が向いたので現行の最新バージョン（0.10.12）に更新しました。&lt;/p&gt;
 </content>
-    <link href="https://m-yama.github.io/posts/2020/1112/ablog_upgrade/" rel="alternate"/>
+    <link href="https://m-yama.github.io/posts/2020/11-12/ablog_upgrade/" rel="alternate"/>
     <published>2020-11-12T00:00:00+09:00</published>
   </entry>
 </feed>
