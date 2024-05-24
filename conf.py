@@ -19,7 +19,7 @@ import alabaster
 #blog_path = 'blog'
 
 # The "title" for the blog, used in acthive pages.  Default is ``'Blog'``.
-blog_title = 'M-Yama BLOG'
+blog_title = 'M-BLOG'
 
 # Base URL for the website, required for generating feeds.
 # e.g. blog_baseurl = "http://example.com/"
@@ -97,9 +97,12 @@ post_date_format = '%Y-%m-%d'
 # sidebars that link to author and location archive pages.
 html_sidebars = {
     '**': [ 'about.html',
-            'postcard.html', 'navigation.html',
-            'recentposts.html', 'tagcloud.html',
-            'categories.html',  'archives.html',
+            'ablog/postcard.html', 
+            #'navigation.html',
+            #'ablog/recentposts.html', 
+            'ablog/tagcloud.html',
+            #'ablog/categories.html',  
+            'ablog/archives.html',
             'searchbox.html',
             ],
     }
@@ -172,7 +175,8 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates', ablog.get_html_templates_path()]
+#templates_path = ['_templates', ablog.get_html_templates_path()]
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 source_suffix = '.rst'
@@ -184,7 +188,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'M-Yama BLOG'
+project = 'M-BLOG'
 copyright = '2016, m-yama'
 author = 'm-yama'
 
@@ -266,7 +270,7 @@ html_theme_path = [alabaster.get_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'M-Yama BLOG'
+html_title = 'M-BLOG'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -346,6 +350,6 @@ html_search_language = 'ja'
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'MYBLOGdoc'
+htmlhelp_basename = 'M-BLOGdoc'
 
 

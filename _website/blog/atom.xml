@@ -1,231 +1,332 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
   <id>https://m-yama.github.io/</id>
-  <title>M-Yama BLOG</title>
-  <updated>2020-11-17T06:10:36.848122+00:00</updated>
+  <title>M-BLOG</title>
+  <updated>2024-05-24T02:36:09.016276+00:00</updated>
   <link href="https://m-yama.github.io/"/>
-  <link href="https://m-yama.github.io/blog/atom.xml"/>
-  <generator uri="https://ablog.readthedocs.org" version="0.10.12">ABlog</generator>
+  <link href="https://m-yama.github.io/blog/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.10">ABlog</generator>
   <entry>
-    <id>https://m-yama.github.io/posts/2016/05/15/using-ablog/</id>
-    <title>ABlogを使ってSphinxでブログを書いてみる</title>
-    <updated>2016-05-20T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;Sphinxでブログを書いてみたいと思い、Googleで検索したら &lt;a class="reference external" href="http://ablog.readthedocs.io/"&gt;ABlog for Sphinx&lt;/a&gt; というのが見つかったので、使ってみる。&lt;/p&gt;
+    <id>https://m-yama.github.io/posts/2020/11-12/ablog_upgrade/</id>
+    <title>Ablogのバージョンをアップグレード</title>
+    <updated>2020-11-12T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;今まで ablog バージョンを指定して古いバージョンを使い続けていましたが、気が向いたので現行の最新バージョン（0.10.12）に更新しました。&lt;/p&gt;
+&lt;/p&gt;
 </content>
-    <link href="https://m-yama.github.io/posts/2016/05/15/using-ablog/" rel="alternate"/>
-    <published>2016-05-15T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2016/05/16/deploy-to-github/</id>
-    <title>Ablogで書いたSphinxブログをGithubにデプロイしてみる</title>
-    <updated>2016-05-16T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;&lt;em&gt;Github&lt;/em&gt; にこのブログをデプロイをしてみる。
-ということで、初めてのリポジトリを作成。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2016/05/16/deploy-to-github/" rel="alternate"/>
-    <published>2016-05-16T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2016/05/22/fontawasome-setting/</id>
-    <title>Ablogにアイコンが表示されるようにする</title>
-    <updated>2016-05-22T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;カレンダーやタグなどのアイコンが表示されていなかったので、表示されるようにする。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2016/05/22/fontawasome-setting/" rel="alternate"/>
-    <published>2016-05-22T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2016/06/03/post-from-ipad/</id>
-    <title>Ablogのブログ記事をiPadで投稿</title>
-    <updated>2016-06-03T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;iPadから、Githubで投稿してみた。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2016/06/03/post-from-ipad/" rel="alternate"/>
-    <published>2016-06-03T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2016/07/17/vaio-phone-biz/</id>
-    <title>VAIO Phone Bizを購入した話</title>
-    <updated>2016-07-17T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;&lt;img alt="img-front" src="../_images/vaio-phone-biz-front.jpg" style="width: 147.0px; height: 196.0px;" /&gt; &lt;img alt="img-back" src="../_images/vaio-phone-biz-back.jpg" style="width: 147.0px; height: 196.0px;" /&gt; &lt;br&gt;
-VAIO Phone Biz を買って１ヶ月ほど経ったので、簡単に感想を書いてみたいと思います。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2016/07/17/vaio-phone-biz/" rel="alternate"/>
-    <published>2016-07-17T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2016/09/10/smartkeyboard/</id>
-    <title>今さらSmart Keyboardを購入した話</title>
-    <updated>2016-09-17T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;&lt;img alt="img1" src="../_images/package01.jpg" style="width: 160.0px; height: 120.0px;" /&gt; &lt;img alt="img2" src="../_images/package02.jpg" style="width: 160.0px; height: 120.0px;" /&gt; &lt;br&gt;
-iPad Pro 9.7を買ってから今まではキーボードにMicrosoftのUniversal Mobile Keyboardを使っていましたが、やはりキーボードとiPadと2つのデバイスを持ち歩くのが煩わしく感じてきたので、先月あたりからSmartKeyboardが欲しくなってきました。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2016/09/10/smartkeyboard/" rel="alternate"/>
-    <published>2016-09-11T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2016/10/27/iphone7plus/</id>
-    <title>iPhone 7 Plus に機種変更した話</title>
-    <updated>2016-10-31T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;&lt;img alt="img" src="../_images/IMG_7736.JPG" style="width: 201.60000000000002px; height: 151.20000000000002px;" /&gt; &lt;br&gt;
-先日、iPhone 7 Plus をドコモオンラインショップで購入しました。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2016/10/27/iphone7plus/" rel="alternate"/>
-    <published>2016-10-27T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2016/10/28/reset-github-2fa/</id>
-    <title>Githubにサインインできなくなった話</title>
-    <updated>2016-10-28T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;携帯電話を機種変更したときに、
-Githubの2要素認証をオンにしたまま前のケータイを初期化してしまい、
-Githubにログインできなくなってしまいました。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2016/10/28/reset-github-2fa/" rel="alternate"/>
-    <published>2016-10-28T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2016/10/29/pip-error/</id>
-    <title>pipでインストール中にエラーが出た話</title>
-    <updated>2016-10-29T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;pip で色々インストールしている最中に、以下のようなエラーが発生。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2016/10/29/pip-error/" rel="alternate"/>
-    <published>2016-10-29T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/02/19/win10-tofu-font/</id>
-    <title>Windows10で一部の文字が四角（豆腐）になる問題</title>
-    <updated>2017-02-19T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;先日、ASUSのT102HAを購入し、セットアップしている途中、
-所々で文字が四角（いわゆる豆腐）で表示されているのに気付いた。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/02/19/win10-tofu-font/" rel="alternate"/>
-    <published>2017-02-19T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/02/20/zenwatch3-battery/</id>
-    <title>Zenwatch3のバッテリー持続時間が短い件</title>
-    <updated>2017-03-11T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;先日、ASUSのZenwatch3を購入したが、買った当初バッテリーの持続時間が思った以上に悪く、
-一日どころか夕方にはバッテリーがなくなりそうな状態になってしまっていた。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/02/20/zenwatch3-battery/" rel="alternate"/>
-    <published>2017-02-20T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/03/11/zenwatch3-android/</id>
-    <title>Zenwatch3をAndroidに接続したらバッテリーが長持ちした</title>
-    <updated>2017-03-11T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;Zenwatch3をAndroidケータイに接続して使用すると、iPhoneで使用した場合に比べて、バッテリー持続時間が大幅に向上した。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/03/11/zenwatch3-android/" rel="alternate"/>
-    <published>2017-03-11T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/07/16/sharp-wg-s30/</id>
-    <title>シャープの電子ノートを買った話</title>
-    <updated>2017-12-06T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;&lt;img alt="img" src="../_images/image1.jpeg" style="width: 201.60000000000002px; height: 151.20000000000002px;" /&gt; &lt;br&gt;
-今更ながら、シャープの電子ノート「WG-S30-B」を購入した。2年も前に発売された端末。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/07/16/sharp-wg-s30/" rel="alternate"/>
-    <published>2017-07-16T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/07/17/ablog-build-error/</id>
-    <title>ablog build でエラー</title>
-    <updated>2017-07-17T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ablog&lt;/span&gt; &lt;span class="pre"&gt;build&lt;/span&gt;&lt;/code&gt; を実行すると、ローカルではビルドが通るが、GithubにプッシュしてTravisでビルドが実行された時に、&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/07/17/ablog-build-error/" rel="alternate"/>
-    <published>2017-07-17T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/08/10/ablog-build-error-occured-in-docutils/</id>
-    <title>ablog build でまたしてもエラー</title>
-    <updated>2017-08-10T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;Travis でまたしてもビルドエラーになってしまった。
-&lt;a class="reference internal" href="../posts/2017/07/17/ablog-build-error/#ablog-build-error"&gt;&lt;span class="std std-ref"&gt;前回のエラー&lt;/span&gt;&lt;/a&gt; ではSphinxのバージョンを変更して対応したが、
-今回は &lt;cite&gt;docutils&lt;/cite&gt; 内で発生。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/08/10/ablog-build-error-occured-in-docutils/" rel="alternate"/>
-    <published>2017-08-10T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/08/11/travis-warning-log/</id>
-    <title>Server Name Indication チェックが出来ない警告ログ</title>
-    <updated>2018-03-14T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;Travisのビルドログをよく見ると、「Server Name Indication (SNI) のチェックが出来ないからリンクが壊れるかも」みたいな警告が出ていた。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/08/11/travis-warning-log/" rel="alternate"/>
-    <published>2017-08-11T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/08/11/embed-twitter/</id>
-    <title>サイドバーにツイッターのタイムラインを埋め込む</title>
-    <updated>2017-08-11T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;Sphinxで書いているこのブログのサイドバーに、ツイッターのタイムラインを埋め込んだので手順をまとめておく。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/08/11/embed-twitter/" rel="alternate"/>
-    <published>2017-08-11T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/08/12/blackberry-keyone-topics/</id>
-    <title>BlackBerry KEYone 小ネタ集</title>
-    <updated>2018-01-06T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;BlackBerry KEYone を使っていて発見した小ネタ。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/08/12/blackberry-keyone-topics/" rel="alternate"/>
-    <published>2017-08-12T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2017/10/01/windows-pin-error/</id>
-    <title>Windows10でPINコードを入力してログインしようとするとエラーが発生</title>
-    <updated>2017-10-01T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;&lt;img alt="img" src="../_images/windows-error-0x8009002d.jpg" style="width: 240.0px; height: 180.0px;" /&gt; &lt;br&gt;
-先日、所有するPCのうちの１つを工場出荷状態に戻して再セットアップしたところ、
-Windowsを起動してサインイン画面でPINコードを入力しようとした時に&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2017/10/01/windows-pin-error/" rel="alternate"/>
-    <published>2017-10-01T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2018/04/07/travis_python_version/</id>
-    <title>Travis-CIでのPythonバージョンの変更</title>
-    <updated>2018-04-07T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;このブログは &lt;a class="reference external" href="http://ablog.readthedocs.io/"&gt;Ablog&lt;/a&gt; を使用しており、ブログを書いてgithubにpushした時に、自動的にビルドしてgithub.ioにデプロイするためにTravis-CIを使用している。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2018/04/07/travis_python_version/" rel="alternate"/>
-    <published>2018-04-07T00:00:00+09:00</published>
-  </entry>
-  <entry>
-    <id>https://m-yama.github.io/posts/2019/08/15/onemix3_caps_to_ime_switch/</id>
-    <title>OneMix3でCapsキーをIMEオン/オフキーに変更した</title>
-    <updated>2019-08-15T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;USキーボードでは日本語・英語入力の切り替えは Alt + チルダ でできますが、
-OneMix3はチルダが押しづらい位置にあるので、あまり使わないCapsキーをIMEオン・オフに変更しました。
-Capsは死にますが、左手小指だけで日本語・英語の入力を切り替えられるようになって幸せです。&lt;/p&gt;
-</content>
-    <link href="https://m-yama.github.io/posts/2019/08/15/onemix3_caps_to_ime_switch/" rel="alternate"/>
-    <published>2019-08-15T00:00:00+09:00</published>
+    <link href="https://m-yama.github.io/posts/2020/11-12/ablog_upgrade/"/>
+    <summary>今まで ablog バージョンを指定して古いバージョンを使い続けていましたが、気が向いたので現行の最新バージョン（0.10.12）に更新しました。</summary>
+    <category term="ablog" label="ablog"/>
+    <published>2020-11-12T00:00:00+09:00</published>
   </entry>
   <entry>
     <id>https://m-yama.github.io/posts/2019/08/19/powershell_crlf/</id>
     <title>Powershellで改行コードをCRLFに一括置換する</title>
     <updated>2019-08-19T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;Powershellで、フォルダ内（サブフォルダ含む）のファイルの改行コードをCRLFに一括置換する。&lt;/p&gt;
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Powershellで、フォルダ内（サブフォルダ含む）のファイルの改行コードをCRLFに一括置換する。&lt;/p&gt;
+&lt;/p&gt;
 </content>
-    <link href="https://m-yama.github.io/posts/2019/08/19/powershell_crlf/" rel="alternate"/>
+    <link href="https://m-yama.github.io/posts/2019/08/19/powershell_crlf/"/>
+    <summary>Powershellで、フォルダ内（サブフォルダ含む）のファイルの改行コードをCRLFに一括置換する。</summary>
+    <category term="powershell" label="powershell"/>
     <published>2019-08-19T00:00:00+09:00</published>
   </entry>
   <entry>
-    <id>https://m-yama.github.io/posts/2020/11-12/ablog_upgrade/</id>
-    <title>Ablogのバージョンをアップグレード</title>
-    <updated>2020-11-12T00:00:00+09:00</updated>
-    <content type="html">&lt;p&gt;今まで ablog バージョンを指定して古いバージョンを使い続けていましたが、気が向いたので現行の最新バージョン（0.10.12）に更新しました。&lt;/p&gt;
+    <id>https://m-yama.github.io/posts/2019/08/15/onemix3_caps_to_ime_switch/</id>
+    <title>OneMix3でCapsキーをIMEオン/オフキーに変更した</title>
+    <updated>2019-08-15T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;USキーボードでは日本語・英語入力の切り替えは Alt + チルダ でできますが、
+OneMix3はチルダが押しづらい位置にあるので、あまり使わないCapsキーをIMEオン・オフに変更しました。
+Capsは死にますが、左手小指だけで日本語・英語の入力を切り替えられるようになって幸せです。&lt;/p&gt;
+&lt;/p&gt;
 </content>
-    <link href="https://m-yama.github.io/posts/2020/11-12/ablog_upgrade/" rel="alternate"/>
-    <published>2020-11-12T00:00:00+09:00</published>
+    <link href="https://m-yama.github.io/posts/2019/08/15/onemix3_caps_to_ime_switch/"/>
+    <summary>USキーボードでは日本語・英語入力の切り替えは Alt + チルダ でできますが、
+OneMix3はチルダが押しづらい位置にあるので、あまり使わないCapsキーをIMEオン・オフに変更しました。
+Capsは死にますが、左手小指だけで日本語・英語の入力を切り替えられるようになって幸せです。</summary>
+    <category term="onemix" label="onemix"/>
+    <published>2019-08-15T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2018/04/07/travis_python_version/</id>
+    <title>Travis-CIでのPythonバージョンの変更</title>
+    <updated>2018-04-07T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;このブログは &lt;a class="reference external" href="http://ablog.readthedocs.io/"&gt;Ablog&lt;/a&gt; を使用しており、ブログを書いてgithubにpushした時に、自動的にビルドしてgithub.ioにデプロイするためにTravis-CIを使用している。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2018/04/07/travis_python_version/"/>
+    <summary>このブログは Ablog を使用しており、ブログを書いてgithubにpushした時に、自動的にビルドしてgithub.ioにデプロイするためにTravis-CIを使用している。</summary>
+    <category term="travis" label="travis"/>
+    <published>2018-04-07T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/10/01/windows-pin-error/</id>
+    <title>Windows10でPINコードを入力してログインしようとするとエラーが発生</title>
+    <updated>2017-10-01T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;img alt="img" src="https://m-yama.github.io/_images/windows-error-0x8009002d.jpg" style="width: 240.0px; height: 180.0px;" /&gt; &lt;br&gt;
+先日、所有するPCのうちの１つを工場出荷状態に戻して再セットアップしたところ、
+Windowsを起動してサインイン画面でPINコードを入力しようとした時に&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/10/01/windows-pin-error/"/>
+    <summary>img &lt;br&gt;
+先日、所有するPCのうちの１つを工場出荷状態に戻して再セットアップしたところ、
+Windowsを起動してサインイン画面でPINコードを入力しようとした時に</summary>
+    <category term="windows" label="windows"/>
+    <published>2017-10-01T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/08/12/blackberry-keyone-topics/</id>
+    <title>BlackBerry KEYone 小ネタ集</title>
+    <updated>2018-01-06T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;BlackBerry KEYone を使っていて発見した小ネタ。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/08/12/blackberry-keyone-topics/"/>
+    <summary>BlackBerry KEYone を使っていて発見した小ネタ。</summary>
+    <category term="blackberry" label="blackberry"/>
+    <published>2017-08-12T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/08/11/embed-twitter/</id>
+    <title>サイドバーにツイッターのタイムラインを埋め込む</title>
+    <updated>2017-08-11T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Sphinxで書いているこのブログのサイドバーに、ツイッターのタイムラインを埋め込んだので手順をまとめておく。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/08/11/embed-twitter/"/>
+    <summary>Sphinxで書いているこのブログのサイドバーに、ツイッターのタイムラインを埋め込んだので手順をまとめておく。</summary>
+    <category term="ablog" label="ablog"/>
+    <category term="sphinx" label="sphinx"/>
+    <category term="twitter" label="twitter"/>
+    <published>2017-08-11T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/08/11/travis-warning-log/</id>
+    <title>Server Name Indication チェックが出来ない警告ログ</title>
+    <updated>2018-03-14T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Travisのビルドログをよく見ると、「Server Name Indication (SNI) のチェックが出来ないからリンクが壊れるかも」みたいな警告が出ていた。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/08/11/travis-warning-log/"/>
+    <summary>Travisのビルドログをよく見ると、「Server Name Indication (SNI) のチェックが出来ないからリンクが壊れるかも」みたいな警告が出ていた。</summary>
+    <category term="ablog" label="ablog"/>
+    <category term="sphinx" label="sphinx"/>
+    <category term="travis" label="travis"/>
+    <published>2017-08-11T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/08/10/ablog-build-error-occured-in-docutils/</id>
+    <title>ablog build でまたしてもエラー</title>
+    <updated>2017-08-10T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Travis でまたしてもビルドエラーになってしまった。
+&lt;a class="reference internal" href="../posts/2017/07/17/ablog-build-error/#ablog-build-error"&gt;&lt;span class="std std-ref"&gt;前回のエラー&lt;/span&gt;&lt;/a&gt; ではSphinxのバージョンを変更して対応したが、
+今回は &lt;cite&gt;docutils&lt;/cite&gt; 内で発生。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/08/10/ablog-build-error-occured-in-docutils/"/>
+    <summary>Travis でまたしてもビルドエラーになってしまった。
+前回のエラー ではSphinxのバージョンを変更して対応したが、
+今回は docutils 内で発生。</summary>
+    <category term="ablog" label="ablog"/>
+    <published>2017-08-10T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/07/17/ablog-build-error/</id>
+    <title>ablog build でエラー</title>
+    <updated>2017-07-17T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;ablog&lt;/span&gt; &lt;span class="pre"&gt;build&lt;/span&gt;&lt;/code&gt; を実行すると、ローカルではビルドが通るが、GithubにプッシュしてTravisでビルドが実行された時に、&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/07/17/ablog-build-error/"/>
+    <summary>ablog build を実行すると、ローカルではビルドが通るが、GithubにプッシュしてTravisでビルドが実行された時に、</summary>
+    <category term="ablog" label="ablog"/>
+    <published>2017-07-17T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/07/16/sharp-wg-s30/</id>
+    <title>シャープの電子ノートを買った話</title>
+    <updated>2017-12-06T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;img alt="img" src="https://m-yama.github.io/_images/image1.jpeg" style="width: 201.60000000000002px; height: 151.20000000000002px;" /&gt; &lt;br&gt;
+今更ながら、シャープの電子ノート「WG-S30-B」を購入した。2年も前に発売された端末。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/07/16/sharp-wg-s30/"/>
+    <summary>img &lt;br&gt;
+今更ながら、シャープの電子ノート「WG-S30-B」を購入した。2年も前に発売された端末。</summary>
+    <category term="gadget" label="gadget"/>
+    <published>2017-07-16T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/03/11/zenwatch3-android/</id>
+    <title>Zenwatch3をAndroidに接続したらバッテリーが長持ちした</title>
+    <updated>2017-03-11T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Zenwatch3をAndroidケータイに接続して使用すると、iPhoneで使用した場合に比べて、バッテリー持続時間が大幅に向上した。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/03/11/zenwatch3-android/"/>
+    <summary>Zenwatch3をAndroidケータイに接続して使用すると、iPhoneで使用した場合に比べて、バッテリー持続時間が大幅に向上した。</summary>
+    <category term="gadget" label="gadget"/>
+    <category term="smartwatch" label="smartwatch"/>
+    <published>2017-03-11T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/02/20/zenwatch3-battery/</id>
+    <title>Zenwatch3のバッテリー持続時間が短い件</title>
+    <updated>2017-03-11T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;先日、ASUSのZenwatch3を購入したが、買った当初バッテリーの持続時間が思った以上に悪く、
+一日どころか夕方にはバッテリーがなくなりそうな状態になってしまっていた。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/02/20/zenwatch3-battery/"/>
+    <summary>先日、ASUSのZenwatch3を購入したが、買った当初バッテリーの持続時間が思った以上に悪く、
+一日どころか夕方にはバッテリーがなくなりそうな状態になってしまっていた。</summary>
+    <category term="gadget" label="gadget"/>
+    <category term="smartwatch" label="smartwatch"/>
+    <published>2017-02-20T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2017/02/19/win10-tofu-font/</id>
+    <title>Windows10で一部の文字が四角（豆腐）になる問題</title>
+    <updated>2017-02-19T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;先日、ASUSのT102HAを購入し、セットアップしている途中、
+所々で文字が四角（いわゆる豆腐）で表示されているのに気付いた。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2017/02/19/win10-tofu-font/"/>
+    <summary>先日、ASUSのT102HAを購入し、セットアップしている途中、
+所々で文字が四角（いわゆる豆腐）で表示されているのに気付いた。</summary>
+    <category term="font" label="font"/>
+    <category term="windows" label="windows"/>
+    <published>2017-02-19T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/10/29/pip-error/</id>
+    <title>pipでインストール中にエラーが出た話</title>
+    <updated>2016-10-29T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;pip で色々インストールしている最中に、以下のようなエラーが発生。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/10/29/pip-error/"/>
+    <summary>pip で色々インストールしている最中に、以下のようなエラーが発生。</summary>
+    <category term="python" label="python"/>
+    <published>2016-10-29T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/10/28/reset-github-2fa/</id>
+    <title>Githubにサインインできなくなった話</title>
+    <updated>2016-10-28T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;携帯電話を機種変更したときに、
+Githubの2要素認証をオンにしたまま前のケータイを初期化してしまい、
+Githubにログインできなくなってしまいました。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/10/28/reset-github-2fa/"/>
+    <summary>携帯電話を機種変更したときに、
+Githubの2要素認証をオンにしたまま前のケータイを初期化してしまい、
+Githubにログインできなくなってしまいました。</summary>
+    <category term="github" label="github"/>
+    <published>2016-10-28T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/10/27/iphone7plus/</id>
+    <title>iPhone 7 Plus に機種変更した話</title>
+    <updated>2016-10-31T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;img alt="img" src="https://m-yama.github.io/_images/IMG_7736.JPG" style="width: 201.60000000000002px; height: 151.20000000000002px;" /&gt; &lt;br&gt;
+先日、iPhone 7 Plus をドコモオンラインショップで購入しました。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/10/27/iphone7plus/"/>
+    <summary>img &lt;br&gt;
+先日、iPhone 7 Plus をドコモオンラインショップで購入しました。</summary>
+    <category term="gadget" label="gadget"/>
+    <category term="smartphone" label="smartphone"/>
+    <published>2016-10-27T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/09/10/smartkeyboard/</id>
+    <title>今さらSmart Keyboardを購入した話</title>
+    <updated>2016-09-17T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;img alt="img1" src="https://m-yama.github.io/_images/package01.jpg" style="width: 160.0px; height: 120.0px;" /&gt; &lt;img alt="img2" src="https://m-yama.github.io/_images/package02.jpg" style="width: 160.0px; height: 120.0px;" /&gt; &lt;br&gt;
+iPad Pro 9.7を買ってから今まではキーボードにMicrosoftのUniversal Mobile Keyboardを使っていましたが、やはりキーボードとiPadと2つのデバイスを持ち歩くのが煩わしく感じてきたので、先月あたりからSmartKeyboardが欲しくなってきました。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/09/10/smartkeyboard/"/>
+    <summary>img1 img2 &lt;br&gt;
+iPad Pro 9.7を買ってから今まではキーボードにMicrosoftのUniversal Mobile Keyboardを使っていましたが、やはりキーボードとiPadと2つのデバイスを持ち歩くのが煩わしく感じてきたので、先月あたりからSmartKeyboardが欲しくなってきました。</summary>
+    <category term="gadget" label="gadget"/>
+    <category term="keyboard" label="keyboard"/>
+    <published>2016-09-11T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/07/17/vaio-phone-biz/</id>
+    <title>VAIO Phone Bizを購入した話</title>
+    <updated>2016-07-17T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;img alt="img-front" src="https://m-yama.github.io/_images/vaio-phone-biz-front.jpg" style="width: 147.0px; height: 196.0px;" /&gt; &lt;img alt="img-back" src="https://m-yama.github.io/_images/vaio-phone-biz-back.jpg" style="width: 147.0px; height: 196.0px;" /&gt; &lt;br&gt;
+VAIO Phone Biz を買って１ヶ月ほど経ったので、簡単に感想を書いてみたいと思います。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/07/17/vaio-phone-biz/"/>
+    <summary>img-front img-back &lt;br&gt;
+VAIO Phone Biz を買って１ヶ月ほど経ったので、簡単に感想を書いてみたいと思います。</summary>
+    <category term="gadget" label="gadget"/>
+    <category term="smartphone" label="smartphone"/>
+    <published>2016-07-17T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/06/03/post-from-ipad/</id>
+    <title>Ablogのブログ記事をiPadで投稿</title>
+    <updated>2016-06-03T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;iPadから、Githubで投稿してみた。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/06/03/post-from-ipad/"/>
+    <summary>iPadから、Githubで投稿してみた。</summary>
+    <category term="ablog" label="ablog"/>
+    <category term="github" label="github"/>
+    <category term="sphinx" label="sphinx"/>
+    <published>2016-06-03T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/05/22/fontawasome-setting/</id>
+    <title>Ablogにアイコンが表示されるようにする</title>
+    <updated>2016-05-22T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;カレンダーやタグなどのアイコンが表示されていなかったので、表示されるようにする。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/05/22/fontawasome-setting/"/>
+    <summary>カレンダーやタグなどのアイコンが表示されていなかったので、表示されるようにする。</summary>
+    <category term="ablog" label="ablog"/>
+    <category term="font" label="font"/>
+    <category term="sphinx" label="sphinx"/>
+    <published>2016-05-22T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/05/16/deploy-to-github/</id>
+    <title>Ablogで書いたSphinxブログをGithubにデプロイしてみる</title>
+    <updated>2016-05-16T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;em&gt;Github&lt;/em&gt; にこのブログをデプロイをしてみる。
+ということで、初めてのリポジトリを作成。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/05/16/deploy-to-github/"/>
+    <summary>Github にこのブログをデプロイをしてみる。
+ということで、初めてのリポジトリを作成。</summary>
+    <category term="ablog" label="ablog"/>
+    <category term="github" label="github"/>
+    <category term="sphinx" label="sphinx"/>
+    <published>2016-05-16T00:00:00+09:00</published>
+  </entry>
+  <entry>
+    <id>https://m-yama.github.io/posts/2016/05/15/using-ablog/</id>
+    <title>ABlogを使ってSphinxでブログを書いてみる</title>
+    <updated>2016-05-20T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Sphinxでブログを書いてみたいと思い、Googleで検索したら &lt;a class="reference external" href="http://ablog.readthedocs.io/"&gt;ABlog for Sphinx&lt;/a&gt; というのが見つかったので、使ってみる。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2016/05/15/using-ablog/"/>
+    <summary>Sphinxでブログを書いてみたいと思い、Googleで検索したら ABlog for Sphinx というのが見つかったので、使ってみる。</summary>
+    <category term="ablog" label="ablog"/>
+    <category term="sphinx" label="sphinx"/>
+    <published>2016-05-15T00:00:00+09:00</published>
   </entry>
 </feed>
