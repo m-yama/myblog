@@ -2,10 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
   <id>https://m-yama.github.io/</id>
   <title>M-BLOG</title>
-  <updated>2024-05-24T02:36:09.016276+00:00</updated>
+  <updated>2024-05-24T04:38:53.836819+00:00</updated>
   <link href="https://m-yama.github.io/"/>
   <link href="https://m-yama.github.io/blog/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.io/" version="0.11.10">ABlog</generator>
+  <entry>
+    <id>https://m-yama.github.io/posts/2024/05/24/iphone_iplay50_tethering/</id>
+    <title>iPhoneのテザリングにiPlay50 mini Proがつながらない場合の解決方法</title>
+    <updated>2024-05-24T00:00:00+09:00</updated>
+    <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;iPlay50 mini Pro NFEからiPhoneのテザリングに接続しようとしたところ、iPhoneには繋がっているようだけどインターネットに接続できない、という状態だった。接続ステータスには「IP設定エラー」と表示されており、開発者オプションでWiFi詳細ログを有効にしたところ、「dhcp_failure=1」といったログが残っていたため、そのあたりで調べた。&lt;/p&gt;
+&lt;/p&gt;
+</content>
+    <link href="https://m-yama.github.io/posts/2024/05/24/iphone_iplay50_tethering/"/>
+    <summary>iPlay50 mini Pro NFEからiPhoneのテザリングに接続しようとしたところ、iPhoneには繋がっているようだけどインターネットに接続できない、という状態だった。接続ステータスには「IP設定エラー」と表示されており、開発者オプションでWiFi詳細ログを有効にしたところ、「dhcp_failure=1」といったログが残っていたため、そのあたりで調べた。</summary>
+    <category term="iphoneandroid" label="iphone android"/>
+    <published>2024-05-24T00:00:00+09:00</published>
+  </entry>
   <entry>
     <id>https://m-yama.github.io/posts/2020/11-12/ablog_upgrade/</id>
     <title>Ablogのバージョンをアップグレード</title>
