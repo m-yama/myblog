@@ -189,7 +189,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'M-BLOG'
-copyright = '2016, m-yama'
+copyright = '2024, m-yama'
 author = 'm-yama'
 
 # The version info for the project you're documenting, acts as replacement for
