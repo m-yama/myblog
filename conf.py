@@ -172,7 +172,11 @@ extensions = [
     'sphinx.ext.todo',
     'alabaster',
     'ablog',
+    'sphinx_sitemap',
 ]
+
+html_baseurl = 'https://m-yama.github.io/'
+sitemap_url_scheme = "{link}"
 
 # Add any paths that contain templates here, relative to this directory.
 #templates_path = ['_templates', ablog.get_html_templates_path()]
