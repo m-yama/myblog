@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Travis-CIでのPythonバージョンの変更 &#8212; M-BLOG</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=5be3bfab" />
+    <script src="../../../../../_static/documentation_options.js?v=31c6fa44"></script>
+    <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/translations.js?v=4dbe4bdc"></script>
+    <link rel="canonical" href="https://m-yama.github.io/posts/2018/04/07/travis_python_version.html" />
+    <link rel="icon" href="../../../../../_static/favicon.ico"/>
+    <link rel="author" title="このドキュメントについて" href="../../../../../about/" />
+    <link rel="index" title="索引" href="../../../../../genindex/" />
+    <link rel="search" title="検索" href="../../../../../search/" />
+
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../../../../blog/atom.xml"
+  title="M-BLOG"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="../../../../../_static/css/font-awesome.min.css"
+  type="text/css"
+/>
+
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+<section id="travis-cipython">
+<span id="post-apr-07-2018"></span><h1>Travis-CIでのPythonバージョンの変更<a class="headerlink" href="#travis-cipython" title="Link to this heading">¶</a></h1>
+<p>このブログは <a class="reference external" href="http://ablog.readthedocs.io/">Ablog</a> を使用しており、ブログを書いてgithubにpushした時に、自動的にビルドしてgithub.ioにデプロイするためにTravis-CIを使用している。</p>
+<p>Travis-CIでPython3.6を使おうと .travis.yaml のPythonバージョンを書き換えたところ、
+エラーが発生してビルドできない状態になった。</p>
+<p>エラーログは以下の通り。</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span><span class="nb">source</span><span class="w"> </span>~/virtualenv/python3.6_with_system_site_packages/bin/activate
+/home/travis/.travis/job_stages:<span class="w"> </span>line<span class="w"> </span><span class="m">57</span>:<span class="w"> </span>/home/travis/virtualenv/python3.6_with_system_site_packages/bin/activate:<span class="w"> </span>No<span class="w"> </span>such<span class="w"> </span>file<span class="w"> </span>or<span class="w"> </span>directory
+The<span class="w"> </span><span class="nb">command</span><span class="w"> </span><span class="s2">&quot;source ~/virtualenv/python3.6_with_system_site_packages/bin/activate&quot;</span><span class="w"> </span>failed<span class="w"> </span>and<span class="w"> </span>exited<span class="w"> </span>with<span class="w"> </span><span class="m">1</span><span class="w"> </span>during<span class="w"> </span>.
+Your<span class="w"> </span>build<span class="w"> </span>has<span class="w"> </span>been<span class="w"> </span>stopped.
+</pre></div>
+</div>
+<p>調べてみると、Travis-CIのサイトで以下のように説明があった。</p>
+<p><a class="reference external" href="https://docs.travis-ci.com/user/languages/python/">https://docs.travis-ci.com/user/languages/python/</a></p>
+<hr class="docutils" />
+<blockquote>
+<div><p>The CI Environment uses separate virtualenv instances for each Python version.
+This means that as soon as you specify language: python in .travis.yml your tests will run inside a virtualenv (without you having to explicitly create it).
+System Python is not used and should not be relied on.
+If you need to install Python packages, do it via pip and not apt.</p>
+<p>（Travis CIの環境では、Pythonのバージョンごとに個別のvirtualenvインスタンスを使用します。
+つまり、 language: python と記述することで、あなたのテストはvirtualenv内で動作するようになります。（明示的に作成する必要はありません）
+システムのPythonは使用されませんし、依存してはいけません。
+もしPythonパッケージをインストールする必要があるなら、aptではなくpip経由でインストールしてください。）</p>
+<p>If you decide to use apt anyway, note that for compatibility reasons, you’ll only be able to use the default Python versions that are available in Ubuntu (e.g. for Trusty, this means 2.7.6 and 3.4.3).</p>
+<p>（とにかくaptを使うと決めた場合は、互換性の理由により、Ubuntuで使用可能なデフォルトのPythonバージョンしか使用できないことに注意して下さい。（例えば Trustyでは、2.7.6 と 3.4.3 ということです））</p>
+<p>To access the packages inside the virtualenv, you will need to specify that it should be created with the --system-site-packages option. To do this, include the following in your .travis.yml:</p>
+<p>（virtualenv内のパッケージにアクセスするには、 <code class="docutils literal notranslate"><span class="pre">--system-site-packages</span></code> オプション付きで作成されるよう指定する必要があります。そうするには、 .travis.yml に以下の内容を含めてください。）</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python</span>
+<span class="nt">virtualenv</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">system_site_packages</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</pre></div>
+</div>
+</div></blockquote>
+<hr class="docutils" />
+<p>要は、 <code class="docutils literal notranslate"><span class="pre">system_site_packages</span></code> が <em>true</em> になっていると、システムのデフォルトのPythonを使用する、ということらしい。</p>
+<p>今回のエラーは、Ablogを使い始めた時に何も調べずAblogのサイトにあったサンプルの .travis.yaml をそのまま使っていたため、 <code class="docutils literal notranslate"><span class="pre">system_site_packages</span></code> が <em>true</em> になっていたことが原因だった。</p>
+<p>エラーを解消するには、 <code class="docutils literal notranslate"><span class="pre">system_site_packages</span></code> を <em>false</em> にするか、必要なければ virtualenv のセクション自体削除することで、
+使いたいバージョンのPythonを Travis-CI 上で使えるようになる。</p>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    <a href="../../../../2017/10/01/windows-pin-error/">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Windows10でPINコードを入力してログインしようとするとエラーが発生</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    <a href="../../../../2019/08/15/onemix3_caps_to_ime_switch/">
+      <span>OneMix3でCapsキーをIMEオン/オフキーに変更した</span>
+      
+      <i class="fa fa-arrow-circle-right" ></i>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+  <div class="section ablog__comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "m-yama";
+      var disqus_identifier = "/posts/2018/04/07/travis_python_version/";
+      var disqus_title = "Travis-CIでのPythonバージョンの変更";
+      var disqus_url = "https://m-yama.github.io/posts/2018/04/07/travis_python_version";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">
+        comments powered by Disqus.</a ></noscript >
+    <a href="https://disqus.com" class="dsq-brlink">
+      comments powered by <span class="logo-disqus">Disqus</span>
+    </a >
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../">M-BLOG</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+<div class="ablog-sidebar-item ablog__postcard">
+
+
+<h2>
+  
+  
+  <i class="fa fa-calendar"></i>
+  
+  <span>2018-04-07</span>
+  
+</h2>
+<ul>
+  <div class="ablog-sidebar-item ablog__postcard2">
+
+
+
+
+
+<li id="ablog-sidebar-item category ablog__category">
+  <span>
+    
+    <i class="fa-fw fa fa-folder-open"></i>
+    
+    </span>
+  
+  
+  <a href="../../../../../blog/category/blog/">blog</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item tags ablog__tags">
+  <span>
+    
+    
+    <i class="fa-fw fa fa-tag"></i>
+    
+    </span>
+  
+  
+  <a href="../../../../../blog/tag/travis/">travis</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item comments ablog__comments">
+  <script type="text/javascript">
+    var disqus_shortname = "m-yama";
+
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  
+  <i class="fa-fw fa fa-comments"></i>
+  
+  <a href="#disqus_thread" data-disqus-identifier="/posts/2018/04/07/travis_python_version/" >
+    
+  </a >
+</li>
+
+</div>
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__tags">
+<link rel="stylesheet" href="../../../../../_static/ablog/tagcloud.css" type="text/css" />
+<h3><a href="../../../../../blog/tag/">Tags</a></h3>
+<ul class="ablog-cloud">
+  
+  
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../../../../blog/tag/ablog/">ablog</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/blackberry/">blackberry</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/font/">font</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../../blog/tag/gadget/">gadget</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../../../../blog/tag/github/">github</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/iphone-android/">iphone android</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/keyboard/">keyboard</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/onemix/">onemix</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/powershell/">powershell</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/python/">python</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/smartphone/">smartphone</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/smartwatch/">smartwatch</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../../blog/tag/sphinx/">sphinx</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/travis/">travis</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/twitter/">twitter</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/windows/">windows</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__archive">
+<h3>
+  <a href="../../../../../blog/archive/">Archives</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../../../../../blog/2024/">2024 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2020/">2020 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2019/">2019 (2)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2018/">2018 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2017/">2017 (10)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2016/">2016 (9)</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, m-yama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Windows10で一部の文字が四角（豆腐）になる問題 &#8212; M-BLOG</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=5be3bfab" />
+    <script src="../../../../../_static/documentation_options.js?v=31c6fa44"></script>
+    <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/translations.js?v=4dbe4bdc"></script>
+    <link rel="canonical" href="https://m-yama.github.io/posts/2017/02/19/win10-tofu-font.html" />
+    <link rel="icon" href="../../../../../_static/favicon.ico"/>
+    <link rel="author" title="このドキュメントについて" href="../../../../../about/" />
+    <link rel="index" title="索引" href="../../../../../genindex/" />
+    <link rel="search" title="検索" href="../../../../../search/" />
+
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../../../../blog/atom.xml"
+  title="M-BLOG"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="../../../../../_static/css/font-awesome.min.css"
+  type="text/css"
+/>
+
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+<section id="windows10">
+<h1>Windows10で一部の文字が四角（豆腐）になる問題<a class="headerlink" href="#windows10" title="Link to this heading">¶</a></h1>
+<p>先日、ASUSのT102HAを購入し、セットアップしている途中、
+所々で文字が四角（いわゆる豆腐）で表示されているのに気付いた。</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/win10tofu1.jpg"><img alt="タスクマネージャーのボタンキャプションが四角で表示されている" src="../../../../../_images/win10tofu1.jpg" style="width: 256.2px; height: 255.49999999999997px;" />
+</a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/win10tofu2.jpg"><img alt="コントロールパネルの言語設定変更ページが四角で表示されている" src="../../../../../_images/win10tofu2.jpg" style="width: 487.2px; height: 415.09999999999997px;" />
+</a>
+</figure>
+<p>Officeを入れたりなんだかんだしている途中で気づいたので、
+最初からなのかセットアップ中に発生したのかは分からない。</p>
+<section id="id1">
+<h2>解消方法<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>文字化けする原因は色々とあるらしく、原因によって解消方法が異なるようだが、
+私の場合は以下の方法で解消された。</p>
+<p>[コントロールパネル] ＞ [時計、言語、および地域] ＞ [地域]
+と辿り、[管理]タブにある「システムロケールの変更」ボタンを押下し、
+『英語（米国）』に変更してPCを再起動すると解消され、
+その後、再度システムロケールを日本に戻しても正常に表示された。</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/localesetting1.jpg"><img alt="地域の設定1" src="../../../../../_images/localesetting1.jpg" style="width: 796.5999999999999px; height: 417.2px;" />
+</a>
+</figure>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/localesetting2.jpg"><img alt="地域の設定2" src="../../../../../_images/localesetting2.jpg" style="width: 311.5px; height: 420.0px;" />
+</a>
+</figure>
+<p>ただ、上記を試す前にも、いったん日本語補助フォントを削除して再インストールしたり、
+ネットで見つけた対処法を色々試していたので、それらの影響もあるかもしれない。</p>
+<p>以上</p>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    <a href="../../../../2016/10/29/pip-error/">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>pipでインストール中にエラーが出た話</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    <a href="../../20/zenwatch3-battery/">
+      <span>Zenwatch3のバッテリー持続時間が短い件</span>
+      
+      <i class="fa fa-arrow-circle-right" ></i>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+  <div class="section ablog__comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "m-yama";
+      var disqus_identifier = "/posts/2017/02/19/win10-tofu-font/";
+      var disqus_title = "Windows10で一部の文字が四角（豆腐）になる問題";
+      var disqus_url = "https://m-yama.github.io/posts/2017/02/19/win10-tofu-font";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">
+        comments powered by Disqus.</a ></noscript >
+    <a href="https://disqus.com" class="dsq-brlink">
+      comments powered by <span class="logo-disqus">Disqus</span>
+    </a >
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../">M-BLOG</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+<div class="ablog-sidebar-item ablog__postcard">
+
+
+<h2>
+  
+  
+  <i class="fa fa-calendar"></i>
+  
+  <span>2017-02-19</span>
+  
+</h2>
+<ul>
+  <div class="ablog-sidebar-item ablog__postcard2">
+
+
+
+
+
+<li id="ablog-sidebar-item category ablog__category">
+  <span>
+    
+    <i class="fa-fw fa fa-folder-open"></i>
+    
+    </span>
+  
+  
+  <a href="../../../../../blog/category/blog/">blog</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item tags ablog__tags">
+  <span>
+    
+    
+    <i class="fa-fw fa fa-tags"></i>
+    
+    
+    </span>
+  
+  
+  <a href="../../../../../blog/tag/windows/">windows</a>
+  
+  
+  
+  
+  
+  <a href="../../../../../blog/tag/font/">font</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item comments ablog__comments">
+  <script type="text/javascript">
+    var disqus_shortname = "m-yama";
+
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  
+  <i class="fa-fw fa fa-comments"></i>
+  
+  <a href="#disqus_thread" data-disqus-identifier="/posts/2017/02/19/win10-tofu-font/" >
+    
+  </a >
+</li>
+
+</div>
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__tags">
+<link rel="stylesheet" href="../../../../../_static/ablog/tagcloud.css" type="text/css" />
+<h3><a href="../../../../../blog/tag/">Tags</a></h3>
+<ul class="ablog-cloud">
+  
+  
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../../../../blog/tag/ablog/">ablog</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/blackberry/">blackberry</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/font/">font</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../../blog/tag/gadget/">gadget</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../../../../blog/tag/github/">github</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/iphone-android/">iphone android</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/keyboard/">keyboard</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/onemix/">onemix</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/powershell/">powershell</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/python/">python</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/smartphone/">smartphone</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/smartwatch/">smartwatch</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../../blog/tag/sphinx/">sphinx</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/travis/">travis</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/twitter/">twitter</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/windows/">windows</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__archive">
+<h3>
+  <a href="../../../../../blog/archive/">Archives</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../../../../../blog/2024/">2024 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2020/">2020 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2019/">2019 (2)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2018/">2018 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2017/">2017 (10)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2016/">2016 (9)</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, m-yama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

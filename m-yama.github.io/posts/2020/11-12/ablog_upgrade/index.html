@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ablogのバージョンをアップグレード &#8212; M-BLOG</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/alabaster.css?v=5be3bfab" />
+    <script src="../../../../_static/documentation_options.js?v=31c6fa44"></script>
+    <script src="../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/translations.js?v=4dbe4bdc"></script>
+    <link rel="canonical" href="https://m-yama.github.io/posts/2020/11-12/ablog_upgrade.html" />
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="author" title="このドキュメントについて" href="../../../../about/" />
+    <link rel="index" title="索引" href="../../../../genindex/" />
+    <link rel="search" title="検索" href="../../../../search/" />
+
+   
+  <link rel="stylesheet" href="../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../../../blog/atom.xml"
+  title="M-BLOG"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="../../../../_static/css/font-awesome.min.css"
+  type="text/css"
+/>
+
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+<section id="ablog">
+<h1>Ablogのバージョンをアップグレード<a class="headerlink" href="#ablog" title="Link to this heading">¶</a></h1>
+<p>今まで ablog バージョンを指定して古いバージョンを使い続けていましたが、気が向いたので現行の最新バージョン（0.10.12）に更新しました。</p>
+<section id="ablog-deploy">
+<h2>ablog deploy できなくなった<a class="headerlink" href="#ablog-deploy" title="Link to this heading">¶</a></h2>
+<p>記事を書いて github に push すると、Travis CI でビルドされて github.io に自動でデプロイされる、という仕組みで運用しているのですが、 <code class="docutils literal notranslate"><span class="pre">ablog</span> <span class="pre">deploy</span></code> のところでコケるようになってしまいました。</p>
+<p>github と Travis CI は https で連携するようにしていたのですが、どうやら ssh で clone しようとしてエラーになっているようです。</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>ablog<span class="w"> </span>deploy<span class="w"> </span>--push-quietly<span class="w"> </span>--github-token<span class="o">=</span>DEPLOY_KEY<span class="w"> </span>-m<span class="o">=</span><span class="s2">&quot;`git log -1 --pretty=%B`&quot;</span>
+Cloning<span class="w"> </span>into<span class="w"> </span><span class="s1">&#39;/home/travis/build/m-yama/myblog/m-yama.github.io&#39;</span>...
+
+Permission<span class="w"> </span>denied<span class="w"> </span><span class="o">(</span>publickey<span class="o">)</span>.
+fatal:<span class="w"> </span>Could<span class="w"> </span>not<span class="w"> </span><span class="nb">read</span><span class="w"> </span>from<span class="w"> </span>remote<span class="w"> </span>repository.
+
+Please<span class="w"> </span>make<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>have<span class="w"> </span>the<span class="w"> </span>correct<span class="w"> </span>access<span class="w"> </span>rights
+and<span class="w"> </span>the<span class="w"> </span>repository<span class="w"> </span>exists.
+git<span class="w"> </span>clone<span class="w"> </span>git@github.com:m-yama/m-yama.github.io.git<span class="w"> </span>/home/travis/build/m-yama/myblog/m-yama.github.io
+Traceback<span class="w"> </span><span class="o">(</span>most<span class="w"> </span>recent<span class="w"> </span>call<span class="w"> </span>last<span class="o">)</span>:
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/bin/ablog&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">8</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>&lt;module&gt;
+<span class="w">    </span>sys.exit<span class="o">(</span>ablog_main<span class="o">())</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/ablog/commands.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">510</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>ablog_main
+<span class="w">    </span>namespace.func<span class="o">(</span>**namespace.__dict__<span class="o">)</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/ablog/commands.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">447</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>ablog_deploy
+<span class="w">    </span><span class="nv">echo</span><span class="o">=</span>True,
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/invoke/__init__.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">48</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>run
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>Context<span class="o">()</span>.run<span class="o">(</span>command,<span class="w"> </span>**kwargs<span class="o">)</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/invoke/context.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">94</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>run
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>self._run<span class="o">(</span>runner,<span class="w"> </span>command,<span class="w"> </span>**kwargs<span class="o">)</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/invoke/context.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">101</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>_run
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>runner.run<span class="o">(</span>command,<span class="w"> </span>**kwargs<span class="o">)</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/invoke/runners.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">363</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>run
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>self._run_body<span class="o">(</span>command,<span class="w"> </span>**kwargs<span class="o">)</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/invoke/runners.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">422</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>_run_body
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>self.make_promise<span class="o">()</span><span class="w"> </span><span class="k">if</span><span class="w"> </span>self._asynchronous<span class="w"> </span><span class="k">else</span><span class="w"> </span>self._finish<span class="o">()</span>
+<span class="w">  </span>File<span class="w"> </span><span class="s2">&quot;/home/travis/virtualenv/python3.7.1/lib/python3.7/site-packages/invoke/runners.py&quot;</span>,<span class="w"> </span>line<span class="w"> </span><span class="m">489</span>,<span class="w"> </span><span class="k">in</span><span class="w"> </span>_finish
+<span class="w">    </span>raise<span class="w"> </span>UnexpectedExit<span class="o">(</span>result<span class="o">)</span>
+invoke.exceptions.UnexpectedExit:<span class="w"> </span>Encountered<span class="w"> </span>a<span class="w"> </span>bad<span class="w"> </span><span class="nb">command</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span>code!
+
+Command:<span class="w"> </span><span class="s1">&#39;git clone git@github.com:m-yama/m-yama.github.io.git /home/travis/build/m-yama/myblog/m-yama.github.io&#39;</span>
+
+Exit<span class="w"> </span>code:<span class="w"> </span><span class="m">128</span>
+
+Stdout:<span class="w"> </span>already<span class="w"> </span>printed
+
+Stderr:<span class="w"> </span>already<span class="w"> </span>printed
+
+Done.<span class="w"> </span>Your<span class="w"> </span>build<span class="w"> </span>exited<span class="w"> </span>with<span class="w"> </span><span class="m">0</span>.
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h2>解決法（？）<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>結論から言うと、 <code class="docutils literal notranslate"><span class="pre">ablog</span> <span class="pre">deploy</span></code> コマンドに <code class="docutils literal notranslate"><span class="pre">--github-ssh</span></code> オプションを付けると動くようになります。</p>
+<p><em>.travis.yml</em></p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">after_success</span><span class="p">:</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">...</span>
+<span class="w">   </span><span class="l l-Scalar l-Scalar-Plain">- ablog deploy --push-quietly --github-token=DEPLOY_KEY -m=&quot;`git log -1 --pretty=%B`&quot; --github-ssh</span>
+</pre></div>
+</div>
+<p>しかし、 <code class="docutils literal notranslate"><span class="pre">--github-ssh</span></code> オプションを付けると http を使うようになる、というのもおかしい気がします。ネーミングのミスでしょうか？</p>
+<p>とりあえず動くようにはなりました。</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>ablog<span class="w"> </span>deploy<span class="w"> </span>--push-quietly<span class="w"> </span>--github-token<span class="o">=</span>DEPLOY_KEY<span class="w"> </span>-m<span class="o">=</span><span class="s2">&quot;`git log -1 --pretty=%B`&quot;</span><span class="w"> </span>--github-ssh
+Cloning<span class="w"> </span>into<span class="w"> </span><span class="s1">&#39;/home/travis/build/m-yama/myblog/m-yama.github.io&#39;</span>...
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/m-yama/m-yama.github.io.git<span class="w"> </span>/home/travis/build/m-yama/myblog/m-yama.github.io
+Moved<span class="w"> </span><span class="m">159</span><span class="w"> </span>files<span class="w"> </span>to<span class="w"> </span>m-yama.github.io
+...
+</pre></div>
+</div>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    <a href="../../../2019/08/19/powershell_crlf/">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Powershellで改行コードをCRLFに一括置換する</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    <a href="../../../2024/05/24/iphone_iplay50_tethering/">
+      <span>iPhoneのテザリングにiPlay 50 mini Proがつながらない場合の解決方法</span>
+      
+      <i class="fa fa-arrow-circle-right" ></i>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+  <div class="section ablog__comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "m-yama";
+      var disqus_identifier = "/posts/2020/11-12/ablog_upgrade/";
+      var disqus_title = "Ablogのバージョンをアップグレード";
+      var disqus_url = "https://m-yama.github.io/posts/2020/11-12/ablog_upgrade";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">
+        comments powered by Disqus.</a ></noscript >
+    <a href="https://disqus.com" class="dsq-brlink">
+      comments powered by <span class="logo-disqus">Disqus</span>
+    </a >
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../">M-BLOG</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+<div class="ablog-sidebar-item ablog__postcard">
+
+
+<h2>
+  
+  
+  <i class="fa fa-calendar"></i>
+  
+  <span>2020-11-12</span>
+  
+</h2>
+<ul>
+  <div class="ablog-sidebar-item ablog__postcard2">
+
+
+
+
+
+<li id="ablog-sidebar-item category ablog__category">
+  <span>
+    
+    <i class="fa-fw fa fa-folder-open"></i>
+    
+    </span>
+  
+  
+  <a href="../../../../blog/category/blog/">blog</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item tags ablog__tags">
+  <span>
+    
+    
+    <i class="fa-fw fa fa-tag"></i>
+    
+    </span>
+  
+  
+  <a href="../../../../blog/tag/ablog/">ablog</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item comments ablog__comments">
+  <script type="text/javascript">
+    var disqus_shortname = "m-yama";
+
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  
+  <i class="fa-fw fa fa-comments"></i>
+  
+  <a href="#disqus_thread" data-disqus-identifier="/posts/2020/11-12/ablog_upgrade/" >
+    
+  </a >
+</li>
+
+</div>
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__tags">
+<link rel="stylesheet" href="../../../../_static/ablog/tagcloud.css" type="text/css" />
+<h3><a href="../../../../blog/tag/">Tags</a></h3>
+<ul class="ablog-cloud">
+  
+  
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../../../blog/tag/ablog/">ablog</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/blackberry/">blackberry</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/font/">font</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../blog/tag/gadget/">gadget</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../../../blog/tag/github/">github</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/iphone-android/">iphone android</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/keyboard/">keyboard</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/onemix/">onemix</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/powershell/">powershell</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/python/">python</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/smartphone/">smartphone</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/smartwatch/">smartwatch</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../blog/tag/sphinx/">sphinx</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/travis/">travis</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/twitter/">twitter</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../blog/tag/windows/">windows</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__archive">
+<h3>
+  <a href="../../../../blog/archive/">Archives</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../../../../blog/2024/">2024 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../blog/2020/">2020 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../blog/2019/">2019 (2)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../blog/2018/">2018 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../blog/2017/">2017 (10)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../blog/2016/">2016 (9)</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, m-yama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

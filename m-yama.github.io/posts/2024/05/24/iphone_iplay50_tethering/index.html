@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>iPhoneのテザリングにiPlay 50 mini Proがつながらない場合の解決方法 &#8212; M-BLOG</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=5be3bfab" />
+    <script src="../../../../../_static/documentation_options.js?v=31c6fa44"></script>
+    <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/translations.js?v=4dbe4bdc"></script>
+    <link rel="canonical" href="https://m-yama.github.io/posts/2024/05/24/iphone_iplay50_tethering.html" />
+    <link rel="icon" href="../../../../../_static/favicon.ico"/>
+    <link rel="author" title="このドキュメントについて" href="../../../../../about/" />
+    <link rel="index" title="索引" href="../../../../../genindex/" />
+    <link rel="search" title="検索" href="../../../../../search/" />
+
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../../../../blog/atom.xml"
+  title="M-BLOG"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="../../../../../_static/css/font-awesome.min.css"
+  type="text/css"
+/>
+
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+<section id="iphoneiplay-50-mini-pro">
+<h1>iPhoneのテザリングにiPlay 50 mini Proがつながらない場合の解決方法<a class="headerlink" href="#iphoneiplay-50-mini-pro" title="Link to this heading">¶</a></h1>
+<p>iPlay50 mini Pro NFEからiPhoneのテザリングに接続しようとしたところ、iPhoneには繋がっているようだけどインターネットに接続できない、という状態だった。接続ステータスには「IP設定エラー」と表示されており、開発者オプションでWiFi詳細ログを有効にしたところ、「dhcp_failure=1」といったログが残っていたため、そのあたりで調べた。</p>
+<section id="id1">
+<h2>環境<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>iPhone 15 Pro (iOS 17.4.1)</p></li>
+<li><p>iPlay50 mini Pro NFE (Android 13)</p></li>
+<li><p>iPhoneのキャリアは楽天モバイル（Rakuten最強プラン）</p></li>
+<li><p>iPlay50はPovoのSIMを挿した状態。</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>現象<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>iPhoneのインターネット共有をONにする</p></li>
+<li><p>iPlay50のWiFi設定でiPhoneのテザリングへ接続しようとするも、ネットに接続できない。</p></li>
+<li><p>他のAndroid端末からはiPhoneへ接続できる。</p></li>
+<li><p>iPlay50から自宅のWiFiルーターへは接続できる。</p></li>
+</ol>
+</section>
+<section id="id3">
+<h2>原因<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line"><cite>iphone hotspot dhcp not work</cite> でググると、どうやらiOS17.2あたりからiPhoneテザリング時のDHCPまわりの仕様が変わったらしい。（IPv6のアドレスしか払いだされなくなった？）</div>
+<div class="line"><a class="reference external" href="https://discussions.apple.com/thread/255346180?sortBy=best">My iPhone hotspot isn't working after updating to iOS 17.2</a></div>
+<div class="line"><br /></div>
+<div class="line">で、さらに、iPlay50がIPv6に対応していない？</div>
+</div>
+</section>
+<section id="id4">
+<h2>解決方法<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<p>iPlay50側で静的にIPv4アドレスを割り当てる。</p>
+<figure class="align-left" id="id5">
+<a class="reference internal image-reference" href="../../../../../_images/iplay50-wifi1.png"><img alt="../../../../../_images/iplay50-wifi1.png" src="../../../../../_images/iplay50-wifi1.png" style="width: 354.9px; height: 190.5px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">iPlay50の設定の「ネットワークとインターネット」から、iPhoneのSSIDを選択</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id6">
+<a class="reference internal image-reference" href="../../../../../_images/iplay50-wifi2.png"><img alt="../../../../../_images/iplay50-wifi2.png" src="../../../../../_images/iplay50-wifi2.png" style="width: 357.59999999999997px; height: 147.0px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">右上の編集アイコンを選択</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-left" id="id7">
+<a class="reference internal image-reference" href="../../../../../_images/iplay50-wifi3.png"><img alt="../../../../../_images/iplay50-wifi3.png" src="../../../../../_images/iplay50-wifi3.png" style="width: 196.2px; height: 541.1999999999999px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">写真のように設定を行う</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+<div class="legend">
+<ol class="arabic simple">
+<li><p>IP設定を「静的」に変更する。</p></li>
+<li><p>IPアドレスを 172.20.10.x に設定（x は、たぶん 2～14 ならなんでも良いと思う）</p></li>
+<li><p>ゲートウェイを 172.20.10.1 に設定</p></li>
+<li><p>ネットワーク プレフィックス長を 28 に設定（最初は24でもつながりましたが、つながらないことがあったので28に変更したらつながった）</p></li>
+<li><p>その他は適宜環境に応じて設定</p></li>
+</ol>
+<p>上記設定でつながるようになりました。</p>
+</div>
+</figcaption>
+</figure>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    <a href="../../../../2020/11-12/ablog_upgrade/">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Ablogのバージョンをアップグレード</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+  </span>
+</div>
+
+  
+  
+  <div class="section ablog__comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "m-yama";
+      var disqus_identifier = "/posts/2024/05/24/iphone_iplay50_tethering/";
+      var disqus_title = "iPhoneのテザリングにiPlay 50 mini Proがつながらない場合の解決方法";
+      var disqus_url = "https://m-yama.github.io/posts/2024/05/24/iphone_iplay50_tethering";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">
+        comments powered by Disqus.</a ></noscript >
+    <a href="https://disqus.com" class="dsq-brlink">
+      comments powered by <span class="logo-disqus">Disqus</span>
+    </a >
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../">M-BLOG</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+<div class="ablog-sidebar-item ablog__postcard">
+
+
+<h2>
+  
+  
+  <i class="fa fa-calendar"></i>
+  
+  <span>2024-05-24</span>
+  
+</h2>
+<ul>
+  <div class="ablog-sidebar-item ablog__postcard2">
+
+
+
+
+
+<li id="ablog-sidebar-item category ablog__category">
+  <span>
+    
+    <i class="fa-fw fa fa-folder-open"></i>
+    
+    </span>
+  
+  
+  <a href="../../../../../blog/category/blog/">blog</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item tags ablog__tags">
+  <span>
+    
+    
+    <i class="fa-fw fa fa-tag"></i>
+    
+    </span>
+  
+  
+  <a href="../../../../../blog/tag/iphone-android/">iphone android</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item comments ablog__comments">
+  <script type="text/javascript">
+    var disqus_shortname = "m-yama";
+
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  
+  <i class="fa-fw fa fa-comments"></i>
+  
+  <a href="#disqus_thread" data-disqus-identifier="/posts/2024/05/24/iphone_iplay50_tethering/" >
+    
+  </a >
+</li>
+
+</div>
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__tags">
+<link rel="stylesheet" href="../../../../../_static/ablog/tagcloud.css" type="text/css" />
+<h3><a href="../../../../../blog/tag/">Tags</a></h3>
+<ul class="ablog-cloud">
+  
+  
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../../../../blog/tag/ablog/">ablog</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/blackberry/">blackberry</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/font/">font</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../../blog/tag/gadget/">gadget</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../../../../blog/tag/github/">github</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/iphone-android/">iphone android</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/keyboard/">keyboard</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/onemix/">onemix</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/powershell/">powershell</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/python/">python</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/smartphone/">smartphone</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/smartwatch/">smartwatch</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../../blog/tag/sphinx/">sphinx</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/travis/">travis</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/twitter/">twitter</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/windows/">windows</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__archive">
+<h3>
+  <a href="../../../../../blog/archive/">Archives</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../../../../../blog/2024/">2024 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2020/">2020 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2019/">2019 (2)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2018/">2018 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2017/">2017 (10)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2016/">2016 (9)</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, m-yama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

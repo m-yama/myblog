@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>サイドバーにツイッターのタイムラインを埋め込む &#8212; M-BLOG</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css?v=5be3bfab" />
+    <script src="../../../../../_static/documentation_options.js?v=31c6fa44"></script>
+    <script src="../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../_static/translations.js?v=4dbe4bdc"></script>
+    <link rel="canonical" href="https://m-yama.github.io/posts/2017/08/11/embed-twitter.html" />
+    <link rel="icon" href="../../../../../_static/favicon.ico"/>
+    <link rel="author" title="このドキュメントについて" href="../../../../../about/" />
+    <link rel="index" title="索引" href="../../../../../genindex/" />
+    <link rel="search" title="検索" href="../../../../../search/" />
+
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../../../../blog/atom.xml"
+  title="M-BLOG"
+/>
+
+
+<link
+  rel="stylesheet"
+  href="../../../../../_static/css/font-awesome.min.css"
+  type="text/css"
+/>
+
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+<section id="id1">
+<h1>サイドバーにツイッターのタイムラインを埋め込む<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<p>Sphinxで書いているこのブログのサイドバーに、ツイッターのタイムラインを埋め込んだので手順をまとめておく。</p>
+<section id="id2">
+<h2>埋め込むコードを取得する<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>自分のTwitterページのURLをコピー</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/image1.png"><img alt="../../../../../_images/image1.png" src="../../../../../_images/image1.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p><a class="reference external" href="https://publish.twitter.com/">https://publish.twitter.com/</a> にアクセスし、
+先ほどコピーしたURLを貼り付け</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/image2.png"><img alt="../../../../../_images/image2.png" src="../../../../../_images/image2.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>形式は <em>Embedded Timeline</em> を選択</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/image3.png"><img alt="../../../../../_images/image3.png" src="../../../../../_images/image3.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p><em>Copy Code</em> ボタンを押すと、埋め込むHTMLがクリップボードに登録される。</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/image4.png"><img alt="../../../../../_images/image4.png" src="../../../../../_images/image4.png" style="width: 400px;" />
+</a>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p><em>set customization options</em> のリンクを選択すると、
+高さや幅などを設定することができる。</p></li>
+</ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../../../../_images/image5.png"><img alt="../../../../../_images/image5.png" src="../../../../../_images/image5.png" style="width: 400px;" />
+</a>
+</figure>
+</section>
+<section id="id3">
+<h2>サイドバーにテンプレートを追加する<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p><code class="docutils literal notranslate"><span class="pre">_templates</span></code> ディレクトリにHTMLファイルを追加し、先ほど取得したコードを貼り付ける。</p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin-top:15px;&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;twitter-timeline&quot;</span> <span class="na">data-height</span><span class="o">=</span><span class="s">&quot;680&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://twitter.com/myama_jp&quot;</span><span class="p">&gt;</span>Tweets by myama_jp<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">script</span> <span class="na">async</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;//platform.twitter.com/widgets.js&quot;</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>高さを680pxに設定した。</p></li>
+<li><p>上側の余白を調整したかったのでdivタグで囲んだ。</p></li>
+</ul>
+</li>
+<li><p><em>conf.py</em> の <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> に、作成したHTMLファイルのファイル名を追加する。</p>
+<p>↓の場合は <em>twitter.html</em> が追加したHTMLファイルの名前</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;**&#39;</span><span class="p">:</span> <span class="p">[</span> <span class="s1">&#39;about.html&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;postcard.html&#39;</span><span class="p">,</span> <span class="s1">&#39;navigation.html&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;recentposts.html&#39;</span><span class="p">,</span> <span class="s1">&#39;tagcloud.html&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;categories.html&#39;</span><span class="p">,</span>  <span class="s1">&#39;archives.html&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;searchbox.html&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;twitter.html&#39;</span><span class="p">,</span>
+            <span class="p">],</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+</section>
+
+<div class="section ablog__blog_comments">
+  
+  
+
+
+<div class="section ablog__prev-next">
+  <span class="ablog__prev">
+    
+    
+    <a href="../travis-warning-log/">
+      
+      <i class="fa fa-arrow-circle-left"></i>
+      
+      <span>Server Name Indication チェックが出来ない警告ログ</span>
+    </a>
+    
+  </span>
+  <span class="ablog__spacer">&nbsp;</span>
+  <span class="ablog__next">
+    
+    
+    <a href="../../12/blackberry-keyone-topics/">
+      <span>BlackBerry KEYone 小ネタ集</span>
+      
+      <i class="fa fa-arrow-circle-right" ></i>
+      
+    </a>
+    
+  </span>
+</div>
+
+  
+  
+  <div class="section ablog__comments">
+    <h2>Comments</h2>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = "m-yama";
+      var disqus_identifier = "/posts/2017/08/11/embed-twitter/";
+      var disqus_title = "サイドバーにツイッターのタイムラインを埋め込む";
+      var disqus_url = "https://m-yama.github.io/posts/2017/08/11/embed-twitter";
+
+      (function () {
+        var dsq = document.createElement("script");
+        dsq.type = "text/javascript";
+        dsq.async = true;
+        dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+        (
+          document.getElementsByTagName("head")[0] ||
+          document.getElementsByTagName("body")[0]
+        ).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the
+      <a href="https://disqus.com/?ref_noscript">
+        comments powered by Disqus.</a ></noscript >
+    <a href="https://disqus.com" class="dsq-brlink">
+      comments powered by <span class="logo-disqus">Disqus</span>
+    </a >
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../">M-BLOG</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+<div class="ablog-sidebar-item ablog__postcard">
+
+
+<h2>
+  
+  
+  <i class="fa fa-calendar"></i>
+  
+  <span>2017-08-11</span>
+  
+</h2>
+<ul>
+  <div class="ablog-sidebar-item ablog__postcard2">
+
+
+
+
+
+<li id="ablog-sidebar-item category ablog__category">
+  <span>
+    
+    <i class="fa-fw fa fa-folder-open"></i>
+    
+    </span>
+  
+  
+  <a href="../../../../../blog/category/blog/">blog</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item tags ablog__tags">
+  <span>
+    
+    
+    <i class="fa-fw fa fa-tags"></i>
+    
+    
+    </span>
+  
+  
+  <a href="../../../../../blog/tag/twitter/">twitter</a>
+  
+  
+  
+  
+  
+  <a href="../../../../../blog/tag/sphinx/">sphinx</a>
+  
+  
+  
+  
+  
+  <a href="../../../../../blog/tag/ablog/">ablog</a>
+  
+  
+  
+</li>
+
+
+<li id="ablog-sidebar-item comments ablog__comments">
+  <script type="text/javascript">
+    var disqus_shortname = "m-yama";
+
+    (function () {
+      var s = document.createElement("script");
+      s.async = true;
+      s.type = "text/javascript";
+      s.src = "//" + disqus_shortname + ".disqus.com/count.js";
+      (
+        document.getElementsByTagName("HEAD")[0] ||
+        document.getElementsByTagName("BODY")[0]
+      ).appendChild(s);
+    })();
+  </script>
+  
+  <i class="fa-fw fa fa-comments"></i>
+  
+  <a href="#disqus_thread" data-disqus-identifier="/posts/2017/08/11/embed-twitter/" >
+    
+  </a >
+</li>
+
+</div>
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__tags">
+<link rel="stylesheet" href="../../../../../_static/ablog/tagcloud.css" type="text/css" />
+<h3><a href="../../../../../blog/tag/">Tags</a></h3>
+<ul class="ablog-cloud">
+  
+  
+  <li class="ablog-cloud ablog-cloud-5">
+    <a href="../../../../../blog/tag/ablog/">ablog</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/blackberry/">blackberry</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/font/">font</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../../blog/tag/gadget/">gadget</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-2">
+    <a href="../../../../../blog/tag/github/">github</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/iphone-android/">iphone android</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/keyboard/">keyboard</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/onemix/">onemix</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/powershell/">powershell</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/python/">python</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/smartphone/">smartphone</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/smartwatch/">smartwatch</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="../../../../../blog/tag/sphinx/">sphinx</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/travis/">travis</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/twitter/">twitter</a>
+  </li>
+  
+  
+  
+  <li class="ablog-cloud ablog-cloud-1">
+    <a href="../../../../../blog/tag/windows/">windows</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<div class="ablog-sidebar-item ablog__archive">
+<h3>
+  <a href="../../../../../blog/archive/">Archives</a>
+</h3>
+<ul>
+  
+  
+  <li>
+    <a href="../../../../../blog/2024/">2024 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2020/">2020 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2019/">2019 (2)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2018/">2018 (1)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2017/">2017 (10)</a>
+  </li>
+  
+  
+  
+  <li>
+    <a href="../../../../../blog/2016/">2016 (9)</a>
+  </li>
+  
+  
+</ul>
+</div>
+
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">クイック検索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, m-yama.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.3.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
